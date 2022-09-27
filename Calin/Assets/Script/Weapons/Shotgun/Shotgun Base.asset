@@ -16,7 +16,7 @@ MonoBehaviour:
   - 3
   - 8
   - 16
-  numberIndex: 0
+  numberIndex: 1
   cadency:
   - 1
   cadencyIndex: 0

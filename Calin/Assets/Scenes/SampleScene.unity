@@ -1185,7 +1185,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6340015027980761386, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
       propertyPath: variation
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6340015027980761386, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
       propertyPath: angle.Array.size
