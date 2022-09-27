@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d5e664d40b3c74abd904655458e6c3, type: 3}
   m_Name: Shotgun Base
   m_EditorClassIdentifier: 
-  number: []
+  number:
+  - 2
+  - 7
+  - 15
   numberIndex: 0
   cadency:
   - 1
   cadencyIndex: 0
   velocity:
-  - 200
+  - 500
   velocityIndex: 0
   aimAxes: []
   aimAxesIndex: 0
