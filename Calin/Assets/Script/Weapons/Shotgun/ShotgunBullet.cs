@@ -18,14 +18,14 @@ public class ShotgunBullet : MonoBehaviour
 
     private void Update()
     {
-        Destroy(gameObject, 2);
+        //Destroy(gameObject, 2);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }

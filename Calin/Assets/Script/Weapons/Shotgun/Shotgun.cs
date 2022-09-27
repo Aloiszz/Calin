@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using Unity.Mathematics;
+using UnityEditor.U2D;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class Shotgun : MonoBehaviour
 {
@@ -27,7 +29,6 @@ public class Shotgun : MonoBehaviour
 
     [Header("Variation Axe de tir")]
     public int variation;
-
 
     private void Awake()
     {
@@ -77,23 +78,32 @@ public class Shotgun : MonoBehaviour
         if (lastDirection == Vector2.up)
         {
             velocityTop = shotgun_SO.velocity[shotgun_SO.velocityIndex];
-            for (int i = 0; i <= shotgun_SO.number[shotgun_SO.numberIndex]; i++)
+            var angle = 360 / (shotgun_SO.number[shotgun_SO.numberIndex]+1);
+            
+            for (int i = 0; i < shotgun_SO.number[shotgun_SO.numberIndex]; i++)
             {
                 var spawnBullet = Instantiate(shotgunBullet, shotTop.transform.position, quaternion.identity);
-                switch (i)
+
+                var x = (Vector3)lastDirection + Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*shotgun_SO.number[shotgun_SO.numberIndex]/2f), Vector3.forward) * Vector3.up;
+                //Debug.Log((angle * i)+" "+((Vector3)lastDirection +(Quaternion.AngleAxis(angle * i, Vector3.forward) * Vector3.up)));
+                spawnBullet.transform.up = x;
+                spawnBullet.GetComponent<Rigidbody2D>().AddForce(spawnBullet.transform.up * velocityTop);
+                
+                
+                /*switch (i)
                 {
-                    case 3:
-                        var x = lastDirection + new Vector2(-1, lastDirection.y);
+                    case 1:
+                        var x = lastDirection + new Vector2(-1/shotgun_SO.number[shotgun_SO.numberIndex+1], lastDirection.y);
                         spawnBullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * velocityTop);
                         break;
-                    case 1:
+                    case 2:
                         spawnBullet.GetComponent<Rigidbody2D>().AddForce(lastDirection * velocityTop);
                         break;
-                    case 2:
-                        var y = lastDirection + new Vector2(1, lastDirection.y).normalized;
+                    case 3:
+                        var y = lastDirection + new Vector2(1/shotgun_SO.number[shotgun_SO.numberIndex+1], lastDirection.y).normalized;
                         spawnBullet.GetComponent<Rigidbody2D>().AddForce(y.normalized * velocityTop);
                         break;
-                }
+                }*/
             }
         }
         if (lastDirection == Vector2.down)
