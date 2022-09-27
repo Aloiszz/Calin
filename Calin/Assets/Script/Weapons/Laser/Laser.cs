@@ -8,11 +8,11 @@ public class Laser : MonoBehaviour
 {
     public SO_Laser laser_so; 
     
-    [HideInInspector]public GameObject lasershot;
-    [HideInInspector]public GameObject shotTop;
-    [HideInInspector]public GameObject shotDown;
-    [HideInInspector]public GameObject shotRight;
-    [HideInInspector]public GameObject shotleft;
+    public GameObject lasershot;
+    public GameObject shotTop;
+    public GameObject shotDown;
+    public GameObject shotRight;
+    public GameObject shotleft;
 
     
     [HideInInspector]public float velocityTop;
@@ -28,6 +28,17 @@ public class Laser : MonoBehaviour
     [Header("Variation Axe de tir")]
     public int variation;
     
+    private void Awake()
+    {
+        if (instance != null && instance != this) 
+        { 
+            Destroy(this); 
+        } 
+        else 
+        { 
+            instance = this; 
+        } 
+    }
     
     private void Start()
     {
@@ -65,24 +76,16 @@ public class Laser : MonoBehaviour
         velocityLeft = 0;
         if (lastDirection == Vector2.up)
         {
+            var angle = 360 / (laser_so.number[laser_so.numberIndex]+1);
             velocityTop = laser_so.velocity[laser_so.velocityIndex];
             for (int i = 0; i <= laser_so.number[laser_so.numberIndex]; i++)
             {
-                var spawnBullet = Instantiate(lasershot, shotTop.transform.position, Quaternion.identity);
-                switch (i)
-                {
-                    case 3:
-                        var x = lastDirection + new Vector2(-1, lastDirection.y);
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * velocityTop);
-                        break;
-                    case 1:
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(lastDirection * velocityTop);
-                        break;
-                    case 2:
-                        var y = lastDirection + new Vector2(1, lastDirection.y).normalized;
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(y.normalized * velocityTop);
-                        break;
-                }
+                var spawnBullet = Instantiate(lasershot, shotTop.transform.position, quaternion.identity);
+
+                var x = (Vector3)lastDirection + Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*laser_so.number[laser_so.numberIndex]/2f), Vector3.forward) * Vector3.up;
+                //Debug.Log((angle * i)+" "+((Vector3)lastDirection +(Quaternion.AngleAxis(angle * i, Vector3.forward) * Vector3.up)));
+                spawnBullet.transform.up = x;
+                spawnBullet.GetComponent<Rigidbody2D>().AddForce(spawnBullet.transform.up * velocityTop);
             }
         }
         if (lastDirection == Vector2.down)

@@ -24,5 +24,4 @@ public class SO_Shotgun : ScriptableObject
     [Header("ShotGun Spec")] 
     public float incidenceAngle; //incidence angle pour le tir
     
-
 }
