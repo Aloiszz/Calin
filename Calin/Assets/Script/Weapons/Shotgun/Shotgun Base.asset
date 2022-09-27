@@ -16,15 +16,12 @@ MonoBehaviour:
   - 3
   - 8
   - 16
-  numberIndex: 0
+  numberIndex: 1
   cadency:
   - 1
-  - 0.5
-  - 0.25
   cadencyIndex: 0
   velocity:
-  - 500
-  - 600
+  - 900
   velocityIndex: 0
   aimAxes: []
   aimAxesIndex: 0
