@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public float Health = 100f;
+    //public float Health = 100f;
     
     void Start()
     {

@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public SO_PlayerController playerSO;
     
     
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     private Collider2D coll;
 
     public List<Vector2> lastMovement;
