@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d4fd0ec5-4530-421e-a94f-ac5ce9d656db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Calin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/HealBar.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/HealBar.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Menu pause.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Menu pause.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/UI/Chrono.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/Chrono.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/TimerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/TimerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/ScoreScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/ScoreScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

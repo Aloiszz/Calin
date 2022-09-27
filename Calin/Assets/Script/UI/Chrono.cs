@@ -18,7 +18,7 @@ public class Chrono : MonoBehaviour
     
     void Update()
     {
-        
+        StopWatchCalcul();
     }
 
     void StopWatchCalcul()
