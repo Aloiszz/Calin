@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d4fd0ec5-4530-421e-a94f-ac5ce9d656db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Calin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/TimerScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/TimerScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/UI/XP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/XP.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
