@@ -16,8 +16,10 @@ public class Shotgun : MonoBehaviour
     [HideInInspector]public GameObject shotleft;
 
     
-    [HideInInspector]public float velocityX;
-    [HideInInspector]public float velocityY;
+    [HideInInspector]public float velocityTop;
+    [HideInInspector]public float velocityDown;
+    [HideInInspector]public float velocityRight;
+    [HideInInspector]public float velocityLeft;
 
     public static Shotgun instance;
 
@@ -42,7 +44,6 @@ public class Shotgun : MonoBehaviour
     private void Start()
     {
         InvokeRepeating(nameof(Choose),0, shotgun_SO.cadency[shotgun_SO.cadencyIndex]);
-        
         PlayerController.instance.lastMovement.Add(Vector2.zero);
     }
 
@@ -61,38 +62,43 @@ public class Shotgun : MonoBehaviour
             case 2:
                 Shoot2Axe(); // tir 2 salves dans la direction du joueur et la direction -1
                 break;
+            case 3:
+                ShootAllAxe(); // tir 4 salve dans les 4 directions
+                break;
         }
     }
 
     void ShootBase()
     {
-        velocityX = 0;
-        velocityY = 0;
+        velocityTop = 0;
+        velocityDown = 0;
+        velocityRight = 0;
+        velocityLeft = 0;
         if (lastDirection == Vector2.up)
         {
-            velocityY = shotgun_SO.velocity[shotgun_SO.velocityIndex];
-            for (int i = 0; i <= 2; i++)
+            velocityTop = shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            for (int i = 0; i <= shotgun_SO.number[shotgun_SO.numberIndex]; i++)
             {
                 var spawnBullet = Instantiate(shotgunBullet, shotTop.transform.position, quaternion.identity);
                 switch (i)
                 {
-                    case 0:
+                    case 3:
                         var x = lastDirection + new Vector2(-1, lastDirection.y);
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * velocityY);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * velocityTop);
                         break;
                     case 1:
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(lastDirection * velocityY);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(lastDirection * velocityTop);
                         break;
                     case 2:
                         var y = lastDirection + new Vector2(1, lastDirection.y).normalized;
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(y.normalized * velocityY);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(y.normalized * velocityTop);
                         break;
                 }
             }
         }
         if (lastDirection == Vector2.down)
         {
-            velocityY = -shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            velocityDown = -shotgun_SO.velocity[shotgun_SO.velocityIndex];
             for (int i = 0; i <= 2; i++)
             {
                 var spawnBullet = Instantiate(shotgunBullet, shotDown.transform.position, quaternion.identity);
@@ -100,21 +106,21 @@ public class Shotgun : MonoBehaviour
                 {
                     case 0:
                         var x = lastDirection + new Vector2(-1, lastDirection.y);
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-x.normalized * velocityY);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-x.normalized * velocityDown);
                         break;
                     case 1:
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-lastDirection * velocityY);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-lastDirection * velocityDown);
                         break;
                     case 2:
                         var y = lastDirection + new Vector2(1, lastDirection.y).normalized;
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-y.normalized * velocityY);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-y.normalized * velocityDown);
                         break;
                 }
             }
         }
         if (lastDirection == Vector2.right)
         {
-            velocityX = shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            velocityRight = shotgun_SO.velocity[shotgun_SO.velocityIndex];
             for (int i = 0; i <= 2; i++)
             {
                 var spawnBullet = Instantiate(shotgunBullet, shotRight.transform.position, quaternion.identity);
@@ -122,21 +128,21 @@ public class Shotgun : MonoBehaviour
                 {
                     case 0:
                         var x = lastDirection + new Vector2(lastDirection.x, 1);
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * velocityX);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * velocityRight);
                         break;
                     case 1:
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(lastDirection * velocityX);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(lastDirection * velocityRight);
                         break;
                     case 2:
                         var y = lastDirection + new Vector2(lastDirection.x, -1).normalized;
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(y.normalized * velocityX);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(y.normalized * velocityRight);
                         break;
                 }
             }
         }
         if (lastDirection == Vector2.left)
         {
-            velocityX = -shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            velocityLeft = -shotgun_SO.velocity[shotgun_SO.velocityIndex];
             for (int i = 0; i <= 2; i++)
             {
                 var spawnBullet = Instantiate(shotgunBullet, shotleft.transform.position, quaternion.identity);
@@ -144,14 +150,14 @@ public class Shotgun : MonoBehaviour
                 {
                     case 0:
                         var x = lastDirection + new Vector2(lastDirection.x, 1);
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-x.normalized * velocityX);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-x.normalized * velocityLeft);
                         break;
                     case 1:
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-lastDirection * velocityX);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-lastDirection * velocityLeft);
                         break;
                     case 2:
                         var y = lastDirection + new Vector2(lastDirection.x, -1).normalized;
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-y.normalized * velocityX);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-y.normalized * velocityLeft);
                         break;
                 }
             }
@@ -160,20 +166,180 @@ public class Shotgun : MonoBehaviour
 
     void Shoot2Axe()
     {
-        velocityX = 0;
-        velocityY = 0;
+        velocityTop = 0;
+        velocityDown = 0;
+        velocityRight = 0;
+        velocityLeft = 0;
         if (lastDirection == Vector2.up || lastDirection == Vector2.down)
         {
-            velocityY = shotgun_SO.velocity[shotgun_SO.velocityIndex];
-            Instantiate(shotgunBullet, shotTop.transform.position, quaternion.identity);
-            Instantiate(shotgunBullet, shotDown.transform.position, quaternion.identity);
+            velocityDown = -shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            velocityTop = shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            for (int i = 0; i <= 2; i++)
+            {
+                var spawnBullet = Instantiate(shotgunBullet, shotTop.transform.position, quaternion.identity);
+                switch (i)
+                {
+                    case 0:
+                        var x = Vector2.up + new Vector2(-1, Vector2.up.y);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * velocityTop);
+                        break;
+                    case 1:
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.up * velocityTop);
+                        break;
+                    case 2:
+                        var y = Vector2.up + new Vector2(1, Vector2.up.y).normalized;
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(y.normalized * velocityTop);
+                        break;
+                }
+            }
+            for (int i = 0; i <= 2; i++)
+            {
+                var spawnBullet = Instantiate(shotgunBullet, shotDown.transform.position, quaternion.identity);
+                switch (i)
+                {
+                    case 0:
+                        var x = Vector2.down + new Vector2(-1, Vector2.down.y);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-x.normalized * velocityDown);
+                        break;
+                    case 1:
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-Vector2.down * velocityDown);
+                        break;
+                    case 2:
+                        var y = Vector2.down + new Vector2(1, Vector2.down.y).normalized;
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-y.normalized * velocityDown);
+                        break;
+                }
+            }
         }
-        
         if (lastDirection == Vector2.right || lastDirection == Vector2.left)
         {
-            velocityX = shotgun_SO.velocity[shotgun_SO.velocityIndex];
-            Instantiate(shotgunBullet, shotRight.transform.position, quaternion.identity);
-            Instantiate(shotgunBullet, shotleft.transform.position, quaternion.identity);
+            velocityRight = shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            for (int i = 0; i <= 2; i++)
+            {
+                var spawnBullet = Instantiate(shotgunBullet, shotRight.transform.position, quaternion.identity);
+                switch (i)
+                {
+                    case 0:
+                        var x = Vector2.right + new Vector2(Vector2.right.x, 1);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * velocityRight);
+                        break;
+                    case 1:
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.right * velocityRight);
+                        break;
+                    case 2:
+                        var y = Vector2.right + new Vector2(Vector2.right.x, -1).normalized;
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(y.normalized * velocityRight);
+                        break;
+                }
+            }
+            velocityLeft = -shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            for (int i = 0; i <= 2; i++)
+            {
+                var spawnBullet = Instantiate(shotgunBullet, shotleft.transform.position, quaternion.identity);
+                switch (i)
+                {
+                    case 0:
+                        var x = Vector2.left + new Vector2(Vector2.left.x, 1);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-x.normalized * velocityLeft);
+                        break;
+                    case 1:
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-Vector2.left * velocityLeft);
+                        break;
+                    case 2:
+                        var y = Vector2.left + new Vector2(Vector2.left.x, -1).normalized;
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-y.normalized * velocityLeft);
+                        break;
+                }
+            }
+        }
+    }
+
+    void ShootAllAxe()
+    {
+        velocityTop = 0;
+        velocityDown = 0;
+        velocityRight = 0;
+        velocityLeft = 0;
+
+        if (lastDirection == Vector2.up || lastDirection == Vector2.down || lastDirection == Vector2.right ||
+            lastDirection == Vector2.left)
+        {
+            velocityDown = -shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            velocityTop = shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            for (int i = 0; i <= 2; i++)
+            {
+                var spawnBullet = Instantiate(shotgunBullet, shotTop.transform.position, quaternion.identity);
+                switch (i)
+                {
+                    case 0:
+                        var x = Vector2.up + new Vector2(-1, Vector2.up.y);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * velocityTop);
+                        break;
+                    case 1:
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.up * velocityTop);
+                        break;
+                    case 2:
+                        var y = Vector2.up + new Vector2(1, Vector2.up.y).normalized;
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(y.normalized * velocityTop);
+                        break;
+                }
+            }
+            for (int i = 0; i <= 2; i++)
+            {
+                var spawnBullet = Instantiate(shotgunBullet, shotDown.transform.position, quaternion.identity);
+                switch (i)
+                {
+                    case 0:
+                        var x = Vector2.down + new Vector2(-1, Vector2.down.y);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-x.normalized * velocityDown);
+                        break;
+                    case 1:
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-Vector2.down * velocityDown);
+                        break;
+                    case 2:
+                        var y = Vector2.down + new Vector2(1, Vector2.down.y).normalized;
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-y.normalized * velocityDown);
+                        break;
+                }
+            }
+            velocityRight = shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            for (int i = 0; i <= 2; i++)
+            {
+                var spawnBullet = Instantiate(shotgunBullet, shotRight.transform.position, quaternion.identity);
+                switch (i)
+                {
+                    case 0:
+                        var x = Vector2.right + new Vector2(Vector2.right.x, 1);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * velocityRight);
+                        break;
+                    case 1:
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.right * velocityRight);
+                        break;
+                    case 2:
+                        var y = Vector2.right + new Vector2(Vector2.right.x, -1).normalized;
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(y.normalized * velocityRight);
+                        break;
+                }
+            }
+            velocityLeft = -shotgun_SO.velocity[shotgun_SO.velocityIndex];
+            for (int i = 0; i <= 2; i++)
+            {
+                var spawnBullet = Instantiate(shotgunBullet, shotleft.transform.position, quaternion.identity);
+                switch (i)
+                {
+                    case 0:
+                        var x = Vector2.left + new Vector2(Vector2.left.x, 1);
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-x.normalized * velocityLeft);
+                        break;
+                    case 1:
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-Vector2.left * velocityLeft);
+                        break;
+                    case 2:
+                        var y = Vector2.left + new Vector2(Vector2.left.x, -1).normalized;
+                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(-y.normalized * velocityLeft);
+                        break;
+                }
+            }
         }
     }
 }  
