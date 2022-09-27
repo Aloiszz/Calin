@@ -8,6 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Ennemis/Rush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/Chrono.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/XP.cs" root0="FORCE_HIGHLIGHTING" />
@@ -69,7 +70,7 @@
       <updated>1664201435784</updated>
       <workItem from="1664201443717" duration="13162000" />
       <workItem from="1664231811773" duration="8017000" />
-      <workItem from="1664265626352" duration="27919000" />
+      <workItem from="1664265626352" duration="28887000" />
     </task>
     <servers />
   </component>

@@ -21,7 +21,7 @@ MonoBehaviour:
   - 1
   cadencyIndex: 0
   velocity:
-  - 500
+  - 900
   velocityIndex: 0
   aimAxes: []
   aimAxesIndex: 0
