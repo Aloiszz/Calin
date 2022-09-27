@@ -10,12 +10,12 @@ public class Health : MonoBehaviour
     public float maxHealth = 100f;
 
     public Image healthBarImage;
-    public TextMeshProUGUI healthText;
+  //  public TextMeshProUGUI healthText;
    
     void Update()
     {
         healthBarImage.fillAmount = health / maxHealth;
-  //      healthText.text = health + '/' + maxHealth;         probleme ici
+  //    healthText.text = health + '/' + maxHealth;         
     }
 
     public void DamageButton(int damageAmount)
