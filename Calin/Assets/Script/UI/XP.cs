@@ -7,7 +7,7 @@ using TMPro;
 public class XP : MonoBehaviour
 {
     private Image experienceBar;
-    private Text playerLevelTxt;
+    private Text playerLevelText;
     public int playerLevel = 1;
     public float currentXP = 0;
     public float maxXP = 100;
@@ -15,7 +15,7 @@ public class XP : MonoBehaviour
     void Start()
     {
         experienceBar = GameObject.Find("CurrentXP").GetComponent<Image>();
-        playerLevelTxt = GameObject.Find("PlayerLevelTxt").GetComponent<Text>();
+        playerLevelText = GameObject.Find("PlayerLevelText").GetComponent<Text>();
     }
 
     
@@ -32,7 +32,7 @@ public class XP : MonoBehaviour
         {                                               //Si on a assez d'XP
             float reste = currentXP - maxXP;
             playerLevel += 1;
-            playerLevelTxt.text = "Player Level : " + playerLevel;
+            playerLevelText.text = "Player Level : " + playerLevel;
             currentXP = 0 + reste;
             maxXP = maxXP * rateXP;
         }
