@@ -16,7 +16,7 @@ public class SO_Shotgun : ScriptableObject
     
     public List<float> velocity; // velocité de la munition
     public int velocityIndex; // indexation a récupérer
-    
+
     public List<string> aimAxes; // direction du tir;
     public int aimAxesIndex; // indexation a récupérer
 
