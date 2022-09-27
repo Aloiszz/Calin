@@ -1187,6 +1187,42 @@ PrefabInstance:
       propertyPath: variation
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761386, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: angle.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761386, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: angle.Array.data[0]
+      value: 11.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761386, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: angle.Array.data[1]
+      value: 22.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761386, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: angle.Array.data[2]
+      value: 33.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761386, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: angle.Array.data[3]
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761386, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: angle.Array.data[4]
+      value: 56.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761386, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: angle.Array.data[5]
+      value: 67.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761386, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: angle.Array.data[6]
+      value: 78.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761386, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: angle.Array.data[7]
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 6340015027980761388, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
