@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d4fd0ec5-4530-421e-a94f-ac5ce9d656db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Calin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Laser/Laser.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon/Laser/Laser.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapons/Laser/Laser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapons/Laser/Laser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapons/Laser/SO_Laser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapons/Laser/SO_Laser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapons/Shotgun/SO_Shotgun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapons/Shotgun/SO_Shotgun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cam Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cam Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
       <workItem from="1664231811773" duration="8017000" />
       <workItem from="1664265626352" duration="10412000" />
       <workItem from="1664288581283" duration="118000" />
-      <workItem from="1664288758091" duration="3517000" />
+      <workItem from="1664288758091" duration="4664000" />
     </task>
     <servers />
   </component>

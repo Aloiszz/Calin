@@ -313,18 +313,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9604a3efbb41c124d8f5baceca813c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laser_so: {fileID: 0}
-  lasershot: {fileID: 0}
-  shotTop: {fileID: 0}
-  shotDown: {fileID: 0}
-  shotRight: {fileID: 0}
-  shotleft: {fileID: 0}
+  laser_so: {fileID: 11400000, guid: c6e9501f8523be74383adff2e329263c, type: 2}
+  lasershot: {fileID: 4101129191635879770, guid: 9e1ddc92a5288f44994c3349bf38eb9b, type: 3}
+  shotTop: {fileID: 264446906}
+  shotDown: {fileID: 1099087648}
+  shotRight: {fileID: 479050257}
+  shotleft: {fileID: 1124135732}
   velocityTop: 0
   velocityDown: 0
   velocityRight: 0
   velocityLeft: 0
   lastDirection: {x: 0, y: 0}
-  variation: 0
+  variation: 1
 --- !u!1 &197650390
 GameObject:
   m_ObjectHideFlags: 0
