@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using Unity.Mathematics;
+using UnityEditor.Timeline;
 using UnityEditor.U2D;
 using UnityEngine;
 using UnityEngine.U2D;
@@ -12,10 +13,10 @@ public class Shotgun : MonoBehaviour
     public SO_Shotgun shotgun_SO;
     
     [HideInInspector]public GameObject shotgunBullet;
-    [HideInInspector]public GameObject shotTop;
-    [HideInInspector]public GameObject shotDown;
-    [HideInInspector]public GameObject shotRight;
-    [HideInInspector]public GameObject shotleft;
+    public Transform shotTop;
+    public Transform shotDown;
+    public Transform shotRight;
+    public Transform shotleft;
 
     
     [HideInInspector]public float velocityTop;
@@ -44,6 +45,11 @@ public class Shotgun : MonoBehaviour
 
     private void Start()
     {
+        shotTop = transform.Find("ShotGun/ShotgunPointTop");
+        shotDown = transform.Find("ShotGun/ShotgunPointDown");
+        shotleft = transform.Find("ShotGun/ShotgunPointLeft");
+        shotRight = transform.Find("ShotGun/ShotgunPointRight");
+        
         InvokeRepeating(nameof(Choose),0, shotgun_SO.cadency[shotgun_SO.cadencyIndex]);
         PlayerController.instance.lastMovement.Add(Vector2.zero);
     }
