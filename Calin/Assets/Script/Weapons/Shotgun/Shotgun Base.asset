@@ -19,9 +19,12 @@ MonoBehaviour:
   numberIndex: 0
   cadency:
   - 1
+  - 0.5
+  - 0.25
   cadencyIndex: 0
   velocity:
   - 500
+  - 600
   velocityIndex: 0
   aimAxes: []
   aimAxesIndex: 0
