@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Shotgun Base
   m_EditorClassIdentifier: 
   number:
-  - 2
-  - 7
-  - 15
+  - 3
+  - 8
+  - 16
   numberIndex: 0
   cadency:
   - 1
