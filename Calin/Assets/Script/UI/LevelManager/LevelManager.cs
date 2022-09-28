@@ -12,26 +12,38 @@ public class LevelManager : MonoBehaviour
     }
     public void AxeDeTire()
     {
-        Shotgun.instance.axeShootIndex++;
+        if (Shotgun.instance.axeShootIndex < Shotgun.instance.shotgun_SO.axeShoot.Count)
+        {
+            Shotgun.instance.axeShootIndex++;
+        }
         Shotgun.instance.SecureSO();
         Debug.Log(Shotgun.instance.axeShootIndex);
     }
     
     public void AddVelocity()
     {
-        Shotgun.instance.velocityIndex++;
+        if (Shotgun.instance.velocityIndex < Shotgun.instance.shotgun_SO.velocity.Count)
+        {
+            Shotgun.instance.velocityIndex++;
+        }
         Shotgun.instance.SecureSO();
     }
     
     public void AddCadency()
     {
-        Shotgun.instance.cadencyIndex++;
+        if (Shotgun.instance.cadencyIndex < Shotgun.instance.shotgun_SO.cadency.Count)
+        {
+            Shotgun.instance.cadencyIndex++;
+        }
         Shotgun.instance.SecureSO();
     }
     
     public void AddNumber()
     {
-        Shotgun.instance.numberIndex++;
+        if (Shotgun.instance.numberIndex < Shotgun.instance.shotgun_SO.number.Count)
+        {
+            Shotgun.instance.numberIndex++;
+        }
         Shotgun.instance.SecureSO();
     }
     
