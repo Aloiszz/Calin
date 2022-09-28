@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d4fd0ec5-4530-421e-a94f-ac5ce9d656db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Calin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Ennemis/Rush.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Ennemis/Rush.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapons/Shotgun/Shotgun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapons/Shotgun/Shotgun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/XP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/XP.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,12 +12,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/XP.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Caverne-Merveilleuse/CarverneMerveilleuse/Assets/Prefab/Maps/RoomSpawner.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapons/Shotgun/SO_Shotgun.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Caverne-Merveilleuse/CarverneMerveilleuse/Assets/Script/Controller/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/Chrono.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/XP.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapons/Shotgun/SO_Shotgun.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -29,9 +26,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\unity\2021.3.9f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Fork\ExplorationDuCalin\Calin -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Fork\ExplorationDuCalin\Calin" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -70,6 +73,7 @@
       <workItem from="1664201443717" duration="13162000" />
       <workItem from="1664231811773" duration="8017000" />
       <workItem from="1664265626352" duration="28887000" />
+      <workItem from="1664353554349" duration="1279000" />
     </task>
     <servers />
   </component>
