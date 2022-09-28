@@ -9,29 +9,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4d5e664d40b3c74abd904655458e6c3, type: 3}
-  m_Name: Shotgun Base
+  m_Script: {fileID: 11500000, guid: c40d647ddb5ccb04e946e28d33e1a3ca, type: 3}
+  m_Name: Rush
   m_EditorClassIdentifier: 
-  number:
-  - 3
-  - 8
-  - 16
-  numberIndex: 0
-  cadency:
-  - 1
-  cadencyIndex: 0
-  velocity:
-  - 900
-  velocityIndex: 0
-  axeShoot: 010000000200000003000000
-  axeShootIndex: 0
   levelPlayer: 0
-  bulletDamage:
+  life:
+  - 3
+  - 4
   - 5
   - 6
   - 7
   - 8
   - 9
-  - 10
-  life: []
-  xp: []
+  velocity:
+  - 500
+  - 500
+  - 700
+  numberBullet:
+  - 4
+  - 8
+  - 8
+  xp:
+  - 1
+  - 2
+  - 9
+  - 15
+  - 18
+  - 24
+  timeCooldown:
+  - 0.5
+  timeCooldownIndex: 0
+  timeDestroyBullet: 5

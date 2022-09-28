@@ -15,7 +15,7 @@ MonoBehaviour:
   speedMovement: 28.71
   isDash: 1
   dashForce: 500
-  dashReload: 0.2
+  dashReload: 0.5
   dashInvinsibleTime: 0
   life: 4
   invinsibleTimer: 0

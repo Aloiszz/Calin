@@ -8,20 +8,27 @@ using UnityEngine;
 public class SO_Shotgun : ScriptableObject
 {
     [Header("Bullet Spec")]
+     
+    
     public List<float> number; // nombre de munitions instantié
-    public int numberIndex; // indexation a récupérer
-    
+    public int numberIndex;
     public List<float> cadency; // cadence de tir
-    public int cadencyIndex; // indexation a récupérer
-    
+    public int cadencyIndex;
     public List<float> velocity; // velocité de la munition
-    public int velocityIndex; // indexation a récupérer
+    public int velocityIndex;
+    public List<int> axeShoot;
+    public int axeShootIndex;
 
-    public List<string> aimAxes; // direction du tir;
-    public int aimAxesIndex; // indexation a récupérer
+     // indexation a récupérer
 
-
-    [Header("ShotGun Spec")] 
-    public float incidenceAngle; //incidence angle pour le tir
+    [Header(" ")]
+    [Header("Level Player")] 
+    public int levelPlayer;
     
+    public List<float> bulletDamage; // direction du tir;
+    public List<float> life;
+    public List<float> xp;
+
+
+
 }

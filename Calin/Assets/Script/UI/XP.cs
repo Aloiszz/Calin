@@ -32,7 +32,7 @@ public class XP : MonoBehaviour
         {                                               //Si on a assez d'XP
             float reste = currentXP - maxXP;
             playerLevel += 1;
-            playerLevelText.text = "Level : " + playerLevel;
+            playerLevelText.text = "Lv : " + playerLevel;
             currentXP = 0 + reste;
             maxXP = maxXP * rateXP;
         }
