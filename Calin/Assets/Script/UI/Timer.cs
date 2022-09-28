@@ -9,19 +9,15 @@ public class Timer : MonoBehaviour
     public Text timerText;
     public int tempsint;
     
-    void Start()
-    {
-        
-    }
-
-    
     void Update()
     {
+       
         tempsint = Mathf.RoundToInt(temps);
         timerText.text = ("Prochaine vague dans : ") + tempsint;
         if (temps >= 0)
         {
             temps -= Time.deltaTime;
         }
+        
     }
 }
