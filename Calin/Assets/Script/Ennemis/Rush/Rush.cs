@@ -89,8 +89,7 @@ public class Rush : MonoBehaviour
 
     public void OnTouched()
     {
-        life -=
-            Shotgun.instance.bulletDamage;
+        life -= Shotgun.instance.bulletDamage;
     }
 
     void Death()

@@ -8,7 +8,31 @@ public class LevelManager : MonoBehaviour
     {
         Rush.instance.levelPlayer++;
         Rush.instance.SecureSO();
-        
+        Debug.Log(Rush.instance.levelPlayer);
+    }
+    public void AxeDeTire()
+    {
+        Shotgun.instance.axeShootIndex++;
+        Shotgun.instance.SecureSO();
+        Debug.Log(Shotgun.instance.axeShootIndex);
+    }
+    
+    public void AddVelocity()
+    {
+        Shotgun.instance.velocityIndex++;
+        Shotgun.instance.SecureSO();
+    }
+    
+    public void AddCadency()
+    {
+        Shotgun.instance.cadencyIndex++;
+        Shotgun.instance.SecureSO();
+    }
+    
+    public void AddNumber()
+    {
+        Shotgun.instance.numberIndex++;
+        Shotgun.instance.SecureSO();
     }
     
 }
