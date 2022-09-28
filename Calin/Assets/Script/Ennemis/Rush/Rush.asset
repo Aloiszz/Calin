@@ -12,10 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c40d647ddb5ccb04e946e28d33e1a3ca, type: 3}
   m_Name: Rush
   m_EditorClassIdentifier: 
-  life: 0
-  velocity: []
-  velocityIndex: 0
-  numberBullet: []
-  numberBulletIndex: 0
-  xp: []
-  xpIndex: 0
+  levelPlayer: 0
+  life:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  velocity:
+  - 500
+  - 500
+  - 700
+  numberBullet:
+  - 4
+  - 8
+  - 8
+  xp:
+  - 1
+  - 2
+  - 9
+  - 15
+  - 18
+  - 24
+  timeCooldown:
+  - 0.5
+  timeCooldownIndex: 0
+  timeDestroyBullet: 5

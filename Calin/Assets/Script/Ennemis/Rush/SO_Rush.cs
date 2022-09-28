@@ -6,15 +6,18 @@ using UnityEngine;
 public class SO_Rush : ScriptableObject
 {
     [Header("Rush Spec")] 
-    public float life;
-
-
+    
+    public int levelPlayer;
+    public List<float> life;
     public List<float> velocity;
-    public int velocityIndex;
-
     public List<float> numberBullet;
-    public int numberBulletIndex;
-
     public List<float> xp;
-    public int xpIndex;
+    
+    public List<float> timeCooldown;
+    public int timeCooldownIndex;
+    
+    public float timeDestroyBullet;
+
+    
+    
 }

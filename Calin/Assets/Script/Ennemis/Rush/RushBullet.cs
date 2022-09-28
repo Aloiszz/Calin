@@ -1,12 +1,10 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
-public class ShotgunBullet : MonoBehaviour
+public class RushBullet : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     private CircleCollider2D coll;
     
     private void Start()
@@ -18,15 +16,14 @@ public class ShotgunBullet : MonoBehaviour
 
     private void Update()
     {
-        Destroy(gameObject, 2);
+        Destroy(gameObject, Rush.instance.rush_SO.timeDestroyBullet);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Rush"))
+        if (col.CompareTag("Player"))
         {
-            Rush.instance.OnTouched();
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }
