@@ -40,21 +40,29 @@ public class GameManager : MonoBehaviour
     {
         pause.DOFade(1, 0.5f);
         baseCanvas.DOFade(0, 0.5f);
-        globalVolume.enabled = false;
         StartCoroutine(PauseTime());
     }
     public void UnPause()
     {
-        pause.DOFade(0, 0.5f);
-        baseCanvas.DOFade(1, 0.5f); 
-        globalVolume.enabled = true;
         StartCoroutine(UnPauseTime());
+        pause.DOFade(0, 0.5f);
+        baseCanvas.DOFade(1, 0.5f);
+    }
+
+    public void MenuPrincipal()
+    {
+        
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
     
     IEnumerator PauseTime()
     {
         yield return new WaitForSeconds(0.5f);
-        Time.timeScale = 0;
+        Time.timeScale = 0f;
     }
     IEnumerator UnPauseTime()
     {
@@ -80,19 +88,19 @@ public class GameManager : MonoBehaviour
 
     public void BtnAmelioration1()
     {
-
+        AxeDeTire();
         UnAmelioration();
     }
     
     public void BtnAmelioration2()
     {
-        
+        AddVelocity();
         UnAmelioration();
     }
     
     public void BtnAmelioration3()
     {
-
+        AddNumber();
         UnAmelioration();
     }
     
