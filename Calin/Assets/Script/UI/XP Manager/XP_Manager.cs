@@ -61,7 +61,7 @@ public class XP_Manager : MonoBehaviour
     {
         playerlevelTxt.text = ("Niveau joueurs : ") + levelPlayer;
 
-        if (current_XP > nextXPLevel)
+        if (current_XP >= nextXPLevel)
         {
             levelPlayer++;
             SecureSO();
