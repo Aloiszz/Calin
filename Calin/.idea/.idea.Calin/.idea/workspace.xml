@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4fd0ec5-4530-421e-a94f-ac5ce9d656db" name="Changes" comment="" />
+    <list default="true" id="d4fd0ec5-4530-421e-a94f-ac5ce9d656db" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + Balles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + Balles.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + Cadence.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + Cadence.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + axe.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + axe.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + rapide.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + rapide.png.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../Caverne-Merveilleuse/CarverneMerveilleuse/Assets/Prefab/Maps/RoomSpawner.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Caverne-Merveilleuse/CarverneMerveilleuse/Assets/Script/AI/Mechant.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ennemis/Rush/RushBullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ennemis/Rush/XpRush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />

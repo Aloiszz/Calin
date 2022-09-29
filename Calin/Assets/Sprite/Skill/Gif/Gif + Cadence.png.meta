@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c50016b910a92ce48abd8abba5a6125f
+guid: 45982b35736c74c4ca27e6330902d46f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,28 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bouboule Gentil_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 171
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40156341c557b9f43b5589c3dbbaa2e9
-      internalID: -1400107902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bouboule Gentil_1
+      name: Gif + Cadence_0
       rect:
         serializedVersion: 2
         x: 1
@@ -140,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0d429cb1dac81c4f988445efc31846e
-      internalID: 1422169371
+      spriteID: 7b878b966c46826498f55b3d06958e6c
+      internalID: -1862188736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bouboule Gentil_2
+      name: Gif + Cadence_1
       rect:
         serializedVersion: 2
         x: 1
@@ -161,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dd916522c9824b4d9c2a6ee4e319e01
-      internalID: -1035702481
+      spriteID: 055157e735675d54f88639236c0f2c8e
+      internalID: 1466722190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bouboule Gentil_3
+      name: Gif + Cadence_2
       rect:
         serializedVersion: 2
         x: 1
@@ -182,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47389482367f910478089a1cdc2d903c
-      internalID: 812283361
+      spriteID: 0c7edfe4e7fbc5044a8d409558f6bca7
+      internalID: -1502899297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bouboule Gentil_4
+      name: Gif + Cadence_3
       rect:
         serializedVersion: 2
         x: 1
@@ -203,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ffa2ff8449980f4e9ca505185ca07af
-      internalID: 469927079
+      spriteID: 2c6734662dc60e940ad0105369bf5963
+      internalID: -316368194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bouboule Gentil_5
+      name: Gif + Cadence_4
       rect:
         serializedVersion: 2
         x: 1
@@ -224,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27097841e48e05a4993e841e32333bb1
-      internalID: -512171030
+      spriteID: 456bf527d7f903e44a9e64230c2dd496
+      internalID: 1763989389
       vertices: []
       indices: 
       edges: []
@@ -241,12 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bouboule Gentil_4: 469927079
-      Bouboule Gentil_0: -1400107902
-      Bouboule Gentil_2: -1035702481
-      Bouboule Gentil_1: 1422169371
-      Bouboule Gentil_3: 812283361
-      Bouboule Gentil_5: -512171030
+      Gif + Cadence_3: -316368194
+      Gif + Cadence_0: -1862188736
+      Gif + Cadence_4: 1763989389
+      Gif + Cadence_2: -1502899297
+      Gif + Cadence_1: 1466722190
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

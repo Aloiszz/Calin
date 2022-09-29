@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c50016b910a92ce48abd8abba5a6125f
+guid: 2e8e3cb7bbf845f45b120c930854d272
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,112 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bouboule Gentil_0
+      name: Gif + Balles_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 341
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15320da1c23258f41901a14a99683bdc
+      internalID: -211410843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gif + Balles_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 307
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379586c04cd4d434dae47ac7dea7f6cc
+      internalID: 2838655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gif + Balles_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 273
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ece7e42b1c40e44687693df9fca9e8d
+      internalID: -1026750216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gif + Balles_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 239
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aee5ab996bc3949852364d181381a7
+      internalID: 1663376676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gif + Balles_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 205
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7efdf00f16fe284a8dc4af182b7f914
+      internalID: -1650654762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gif + Balles_5
       rect:
         serializedVersion: 2
         x: 1
@@ -119,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40156341c557b9f43b5589c3dbbaa2e9
-      internalID: -1400107902
+      spriteID: 6028ca8718b325e48b8960b2ba9f0085
+      internalID: -1842055340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bouboule Gentil_1
+      name: Gif + Balles_6
       rect:
         serializedVersion: 2
         x: 1
@@ -140,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0d429cb1dac81c4f988445efc31846e
-      internalID: 1422169371
+      spriteID: 25e6b2b3381cea94f9d01e720756839d
+      internalID: -1725361038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bouboule Gentil_2
+      name: Gif + Balles_7
       rect:
         serializedVersion: 2
         x: 1
@@ -161,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dd916522c9824b4d9c2a6ee4e319e01
-      internalID: -1035702481
+      spriteID: 72012768eeb78f14db609a0fc2428c73
+      internalID: 578407056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bouboule Gentil_3
+      name: Gif + Balles_8
       rect:
         serializedVersion: 2
         x: 1
@@ -182,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47389482367f910478089a1cdc2d903c
-      internalID: 812283361
+      spriteID: dd18d49d68b00a64099099afcbd90a52
+      internalID: 1052953595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bouboule Gentil_4
+      name: Gif + Balles_9
       rect:
         serializedVersion: 2
         x: 1
@@ -203,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ffa2ff8449980f4e9ca505185ca07af
-      internalID: 469927079
+      spriteID: b401d6f9d579bfd40a422fb959dffc76
+      internalID: -1777169065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bouboule Gentil_5
+      name: Gif + Balles_10
       rect:
         serializedVersion: 2
         x: 1
@@ -224,8 +329,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27097841e48e05a4993e841e32333bb1
-      internalID: -512171030
+      spriteID: 1d91bd6988508d2459e157caeb83c442
+      internalID: 1424456970
       vertices: []
       indices: 
       edges: []
@@ -241,12 +346,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bouboule Gentil_4: 469927079
-      Bouboule Gentil_0: -1400107902
-      Bouboule Gentil_2: -1035702481
-      Bouboule Gentil_1: 1422169371
-      Bouboule Gentil_3: 812283361
-      Bouboule Gentil_5: -512171030
+      Gif + Balles_10: 1424456970
+      Gif + Balles_9: -1777169065
+      Gif + Balles_3: 1663376676
+      Gif + Balles_0: -211410843
+      Gif + Balles_4: -1650654762
+      Gif + Balles_6: -1725361038
+      Gif + Balles_7: 578407056
+      Gif + Balles_2: -1026750216
+      Gif + Balles_8: 1052953595
+      Gif + Balles_1: 2838655
+      Gif + Balles_5: -1842055340
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
