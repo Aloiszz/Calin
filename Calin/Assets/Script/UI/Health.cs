@@ -4,21 +4,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
+
 public class Health : MonoBehaviour
 {
 
     public float health = 15f;
     public float maxHealth = 20f;
-    public Gradient ColorGradient;
     private LineRenderer healthLine;
 
     public Image healthBarImage;
-    
-    
+
+
     void Update()
     {
         healthBarImage.fillAmount = health / maxHealth;
-  //    healthText.text = health + '/' + maxHealth;         
+        //healthText.text = health + '/' + maxHealth;         
     }
 
     public void DamageButton(int damageAmount)
@@ -30,4 +31,7 @@ public class Health : MonoBehaviour
     {
         health += healthAmount;
     }
+    
+    
 }
+
