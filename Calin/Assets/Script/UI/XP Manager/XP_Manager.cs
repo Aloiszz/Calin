@@ -66,6 +66,7 @@ public class XP_Manager : MonoBehaviour
         {
             levelPlayer++;
             SecureSO();
+            GameManager.instance.Amelioration();
             _Rush();
         }
         
@@ -88,41 +89,6 @@ public class XP_Manager : MonoBehaviour
     }
     
     
-    /*------------------------------------------------------------------*/
-    public void AxeDeTire()
-    {
-        if (Shotgun.instance.axeShootIndex < Shotgun.instance.shotgun_SO.axeShoot.Count)
-        {
-            Shotgun.instance.axeShootIndex++;
-        }
-        Shotgun.instance.SecureSO();
-    }
     
-    public void AddVelocity()
-    {
-        if (Shotgun.instance.velocityIndex < Shotgun.instance.shotgun_SO.velocity.Count)
-        {
-            Shotgun.instance.velocityIndex++;
-        }
-        Shotgun.instance.SecureSO();
-    }
-    
-    public void AddCadency()
-    {
-        if (Shotgun.instance.cadencyIndex < Shotgun.instance.shotgun_SO.cadency.Count)
-        {
-            Shotgun.instance.cadencyIndex++;
-        }
-        Shotgun.instance.SecureSO();
-    }
-    
-    public void AddNumber()
-    {
-        if (Shotgun.instance.numberIndex < Shotgun.instance.shotgun_SO.number.Count)
-        {
-            Shotgun.instance.numberIndex++;
-        }
-        Shotgun.instance.SecureSO();
-    }
     
 }

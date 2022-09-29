@@ -15,7 +15,7 @@ public class ScoreScript : MonoBehaviour
     
     void Update()
     {
-        score.text = "Score :  " + XP_Manager.instance.current_XP + " / "+ XP_Manager.instance.nextXPLevel;
+        score.text = "EXP :  " + XP_Manager.instance.current_XP + " / "+ XP_Manager.instance.nextXPLevel;
     }  
 }
                                 
