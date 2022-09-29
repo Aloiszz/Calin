@@ -25,7 +25,8 @@ public class ShotgunBullet : MonoBehaviour
     {
         if (col.CompareTag("Rush"))
         {
-            Rush.instance.OnTouched();
+            Rush onTouched = col.GetComponent<Rush>();
+            onTouched.OnTouched();
             Destroy(gameObject);
         }
     }

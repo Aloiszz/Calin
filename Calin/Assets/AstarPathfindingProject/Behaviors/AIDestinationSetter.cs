@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 
@@ -26,7 +27,7 @@ namespace Pathfinding {
 			// scripts as well. So it makes sense that it is up to date every frame.
 			if (ai != null) ai.onSearchPath += Update;
 		}
-
+		
 		void OnDisable () {
 			if (ai != null) ai.onSearchPath -= Update;
 		}
