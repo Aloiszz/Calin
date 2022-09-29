@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4fd0ec5-4530-421e-a94f-ac5ce9d656db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + Balles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + Balles.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + Cadence.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + Cadence.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + axe.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + axe.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + rapide.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Skill/Gif/Gif + rapide.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
