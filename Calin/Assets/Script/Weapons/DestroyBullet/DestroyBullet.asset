@@ -9,32 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4d5e664d40b3c74abd904655458e6c3, type: 3}
-  m_Name: Shotgun Base
+  m_Script: {fileID: 11500000, guid: f8d276a4ba66657459f32b72e5183429, type: 3}
+  m_Name: DestroyBullet
   m_EditorClassIdentifier: 
-  number:
-  - 3
-  - 8
-  - 16
+  number: []
   numberIndex: 0
-  cadency:
-  - 1
-  - 0.5
-  - 0.25
+  cadency: []
   cadencyIndex: 0
-  velocity:
-  - 500
-  - 900
+  velocity: []
   velocityIndex: 0
-  axeShoot: 010000000200000003000000
+  axeShoot: 
   axeShootIndex: 0
   levelPlayer: 0
-  bulletDamage:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  life: []
-  xp: []
+  bulletDamage: []

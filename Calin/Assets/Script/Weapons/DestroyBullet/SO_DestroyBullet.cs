@@ -1,11 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-[CreateAssetMenu(fileName = "Shotgun Base", menuName = "ScriptableObjects/new ShotGun Base", order = 1)]
+[CreateAssetMenu(fileName = "DestroyBullet", menuName = "ScriptableObjects/new DestroyBullet", order = 1)]
 
-public class SO_Shotgun : ScriptableObject
+public class SO_DestroyBullet : ScriptableObject
 {
     [Header("Bullet Spec")]
      
@@ -19,7 +17,7 @@ public class SO_Shotgun : ScriptableObject
     public List<int> axeShoot;
     public int axeShootIndex;
 
-     // indexation a récupérer
+    // indexation a récupérer
 
     [Header(" ")]
     [Header("Level Player")] 
@@ -27,7 +25,4 @@ public class SO_Shotgun : ScriptableObject
     
     public List<float> bulletDamage; // direction du tir;
     
-
-
-
 }

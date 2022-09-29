@@ -32,13 +32,13 @@ public class Shotgun : MonoBehaviour
     
     /*----------------------------------------------------------------*/
     [HideInInspector]public float number; // nombre de munitions instantié
-    [HideInInspector]public int numberIndex;
+    public int numberIndex;
     [HideInInspector]public float cadency; // cadence de tir
-    [HideInInspector]public int cadencyIndex;
+    public int cadencyIndex;
     [HideInInspector]public float velocity; // velocité de la munition
-    [HideInInspector]public int velocityIndex;
+    public int velocityIndex;
     [HideInInspector]public int axeShoot;
-    [HideInInspector]public int axeShootIndex;
+    public int axeShootIndex;
     /*----------------------------------------------------------------*/
     [HideInInspector]public int levelPlayer; 
     [HideInInspector]public float bulletDamage; // direction du tir;
@@ -59,13 +59,13 @@ public class Shotgun : MonoBehaviour
     public void SecureSO()
     {
         number = shotgun_SO.number[numberIndex];
-        numberIndex = shotgun_SO.numberIndex;
+        //numberIndex = shotgun_SO.numberIndex;
         velocity = shotgun_SO.velocity[velocityIndex];
-        velocityIndex = shotgun_SO.velocityIndex;
+        //velocityIndex = shotgun_SO.velocityIndex;
         cadency = shotgun_SO.cadency[cadencyIndex];
-        cadencyIndex = shotgun_SO.cadencyIndex;
+        //cadencyIndex = shotgun_SO.cadencyIndex;
         axeShoot = shotgun_SO.axeShoot[axeShootIndex];
-        axeShootIndex = shotgun_SO.axeShootIndex;
+        //axeShootIndex = shotgun_SO.axeShootIndex;
         
         bulletDamage = shotgun_SO.bulletDamage[levelPlayer];
     }

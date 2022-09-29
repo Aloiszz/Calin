@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3916079150601195957}
   m_Layer: 0
   m_Name: Rush
-  m_TagString: Untagged
+  m_TagString: Rush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,9 +103,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotgunBullet: {fileID: 3382658260587305931, guid: 4974b04329ee4a84ea153a4d89ef9f2d, type: 3}
+  rushXP: {fileID: 4309990073933954382, guid: 4f524213c6f3ae146803ad04f85f34c2, type: 3}
   rush_SO: {fileID: 11400000, guid: b199c6ceff39ef24b8b21267514f29c2, type: 2}
   canShoot: 1
-  distanceToPlayer: 5
+  levelPlayer: 0
+  life: 0
+  velocity: 0
+  numberBullet: 0
+  xp: 0
+  timeCooldown: 0
+  timeCooldownIndex: 0
+  timeDestroyBullet: 0
 --- !u!61 &3916079150601195961
 BoxCollider2D:
   m_ObjectHideFlags: 0

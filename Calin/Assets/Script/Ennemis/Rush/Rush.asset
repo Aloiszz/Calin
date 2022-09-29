@@ -21,22 +21,27 @@ MonoBehaviour:
   - 7
   - 8
   - 9
+  - 10
   velocity:
   - 500
   - 500
+  - 700
+  - 700
+  - 700
+  - 700
+  - 700
   - 700
   numberBullet:
   - 4
   - 8
   - 8
-  xp:
-  - 1
-  - 2
-  - 9
-  - 15
-  - 18
-  - 24
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  xp: 0a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
   timeCooldown:
-  - 0.5
+  - 1
   timeCooldownIndex: 0
   timeDestroyBullet: 5
