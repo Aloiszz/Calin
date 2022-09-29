@@ -24,6 +24,7 @@ MonoBehaviour:
   cadencyIndex: 0
   velocity:
   - 500
+  - 600
   - 900
   velocityIndex: 0
   axeShoot: 010000000200000003000000
@@ -31,10 +32,8 @@ MonoBehaviour:
   levelPlayer: 0
   bulletDamage:
   - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  life: []
-  xp: []
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
