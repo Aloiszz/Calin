@@ -40,7 +40,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
-        SceneManager.LoadScene("menu");         //Nom de la scène du menu principal
+        SceneManager.LoadScene("Menu");         //Nom de la scène du menu principal
     }
 
     public void QuitGame()
@@ -51,6 +51,6 @@ public class PauseMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("SampleScene");
     }
 }
