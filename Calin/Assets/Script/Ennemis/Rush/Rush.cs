@@ -99,6 +99,7 @@ public class Rush : MonoBehaviour
         if (life <= 0)
         {
             Instantiate(rushXP, transform.position, quaternion.identity);
+            SpecialEffectsHelper.Instance.Explosion(transform.position);
             Destroy(gameObject);
         }
         
