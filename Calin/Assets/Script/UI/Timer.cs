@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public Text timerText;
+    public TextMeshProUGUI timerText;
     public int tempsint;
     private float tps;
 

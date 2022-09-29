@@ -12,6 +12,7 @@
     <setting file="file://$PROJECT_DIR$/../../Caverne-Merveilleuse/CarverneMerveilleuse/Assets/Script/AI/Mechant.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ennemis/Rush/RushBullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ennemis/Rush/XpRush.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/Chrono.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/XP.cs" root0="FORCE_HIGHLIGHTING" />
@@ -69,7 +70,7 @@
       <workItem from="1664265626352" duration="28887000" />
       <workItem from="1664352057677" duration="2556000" />
       <workItem from="1664354682980" duration="18444000" />
-      <workItem from="1664438911943" duration="13319000" />
+      <workItem from="1664438911943" duration="19477000" />
     </task>
     <servers />
   </component>

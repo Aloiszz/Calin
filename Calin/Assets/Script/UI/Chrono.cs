@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class Chrono : MonoBehaviour
 {
     public float timer;
@@ -10,7 +10,7 @@ public class Chrono : MonoBehaviour
     private float minutes;
     private float hours;
 
-    [SerializeField] private Text stopWatchText;
+    [SerializeField] private TextMeshProUGUI stopWatchText;
     void Start()
     {
         timer = 0;

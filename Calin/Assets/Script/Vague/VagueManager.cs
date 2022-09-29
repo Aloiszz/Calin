@@ -32,6 +32,7 @@ public class VagueManager : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");
+        
     }
 
     // Update is called once per frame
@@ -45,6 +46,7 @@ public class VagueManager : MonoBehaviour
                 yBorder = Random.Range(-20f, 20f);
                 newEnnemy = Instantiate(Rush, PlayerController.instance.transform.position + new Vector3(xBorder, yBorder, 0), Quaternion.identity);
                 newEnnemy.GetComponent<AIDestinationSetter>().target = target.transform;
+                newEnnemy.GetComponent<Rush>().SecureSO();
             }
             isSpawn = false;
         }

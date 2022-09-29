@@ -42,7 +42,7 @@ public class Rush : MonoBehaviour
 
     private void Start()
     {
-        SecureSO();
+        //SecureSO();
     }
 
     public void SecureSO()
@@ -60,7 +60,6 @@ public class Rush : MonoBehaviour
     
     private void Update()
     {
-        
         OnSeePlayer();
         Death();
     }

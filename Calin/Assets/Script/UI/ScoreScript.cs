@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoreScript : MonoBehaviour
 {
-    private Text score;
+    private TextMeshProUGUI  score;
 
     void Start()
     {
-        score = GetComponent<Text>();
+        score = GetComponent<TextMeshProUGUI>();
     }
     
     void Update()
     {
-        score.text = "Score :  " + XP_Manager.instance.current_XP;
+        score.text = "Score :  " + XP_Manager.instance.current_XP + " / "+ XP_Manager.instance.nextXPLevel;
     }  
 }
                                 
