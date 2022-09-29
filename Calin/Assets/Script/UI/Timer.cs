@@ -13,20 +13,20 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-        tps = VagueManager.instance.vagueTimer;
+        tps = VagueManager.instance.vagueTimer[VagueManager.instance.vagueTimerIndex];
     }
 
     void Update()
     {
-        tempsint = Mathf.RoundToInt(VagueManager.instance.vagueTimer);
+        tempsint = Mathf.RoundToInt(VagueManager.instance.vagueTimer[VagueManager.instance.vagueTimerIndex]);
         timerText.text = ("Prochaine vague dans : ") + tempsint;
-        if (VagueManager.instance.vagueTimer >= 0)
+        if (VagueManager.instance.vagueTimer[VagueManager.instance.vagueTimerIndex] >= 0)
         {
-            VagueManager.instance.vagueTimer -= Time.deltaTime;
+            VagueManager.instance.vagueTimer[VagueManager.instance.vagueTimerIndex] -= Time.deltaTime;
         }
         else
         {
-            VagueManager.instance.vagueTimer = tps;
+            VagueManager.instance.vagueTimer[VagueManager.instance.vagueTimerIndex] = tps;
             VagueManager.instance.isSpawn = true;
         }
         

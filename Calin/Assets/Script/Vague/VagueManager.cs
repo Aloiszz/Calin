@@ -8,8 +8,10 @@ public class VagueManager : MonoBehaviour
 {
     public GameObject target;
     public GameObject Rush;
-    public int RushNumber;
-    public float vagueTimer;
+    public List<int> RushNumber;
+    public int rushNumberIndex;
+    public List<float> vagueTimer;
+    public int vagueTimerIndex;
 
     private GameObject newEnnemy;
     public bool isSpawn = true;
@@ -40,7 +42,7 @@ public class VagueManager : MonoBehaviour
     {
         if (isSpawn)
         {
-            for (int i = 1; i < RushNumber+1; i++)
+            for (int i = 1; i < RushNumber[rushNumberIndex]+1; i++)
             {
                 xBorder = Random.Range(-20f, 20f);
                 yBorder = Random.Range(-20f, 20f);
@@ -49,6 +51,7 @@ public class VagueManager : MonoBehaviour
                 newEnnemy.GetComponent<Rush>().SecureSO();
             }
             isSpawn = false;
+            rushNumberIndex++;
         }
     }
 }
