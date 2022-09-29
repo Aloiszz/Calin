@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -325,15 +325,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Gif + axe_5: -326771158
+      Gif + axe_1: -797326236
       Gif + axe_3: -1940995643
       Gif + axe_9: -1093220921
       Gif + axe_0: 83061340
       Gif + axe_6: 172182876
       Gif + axe_4: -19809628
       Gif + axe_7: 1083711492
-      Gif + axe_1: -797326236
       Gif + axe_2: 2061305000
+      Gif + axe_5: -326771158
       Gif + axe_8: -1604770060
   spritePackingTag: 
   pSDRemoveMatte: 0
