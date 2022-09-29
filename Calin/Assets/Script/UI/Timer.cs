@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float temps = 120;
     public Text timerText;
     public int tempsint;
     private float tps;
@@ -22,11 +21,11 @@ public class Timer : MonoBehaviour
         timerText.text = ("Prochaine vague dans : ") + tempsint;
         if (VagueManager.instance.vagueTimer >= 0)
         {
-            temps -= Time.deltaTime;
+            VagueManager.instance.vagueTimer -= Time.deltaTime;
         }
         else
         {
-            temps = tps;
+            VagueManager.instance.vagueTimer = tps;
             VagueManager.instance.isSpawn = true;
         }
         
