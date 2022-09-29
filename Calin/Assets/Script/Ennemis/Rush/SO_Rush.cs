@@ -12,7 +12,7 @@ public class SO_Rush : ScriptableObject
     public List<float> life;
     public List<float> velocity;
     public List<float> numberBullet;
-    public List<float> xp;
+    public List<int> xp;
     
     
     

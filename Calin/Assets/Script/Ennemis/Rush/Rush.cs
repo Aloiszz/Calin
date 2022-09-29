@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Unity.Mathematics;
+using Random = UnityEngine.Random;
 
 
 public class Rush : MonoBehaviour
 {
     public GameObject shotgunBullet;
+    public GameObject rushXP;
     public SO_Rush rush_SO;
     public bool canShoot = true;
 
@@ -18,7 +21,7 @@ public class Rush : MonoBehaviour
     public float life;
     public float velocity;
     public float numberBullet;
-    public float xp;
+    public int xp;
     /*-------------------------------------------*/
     public float timeCooldown;
     public int timeCooldownIndex;
@@ -29,7 +32,7 @@ public class Rush : MonoBehaviour
     {
         if (instance != null && instance != this) 
         {
-            Destroy(gameObject);
+            
         } 
         else 
         { 
@@ -96,7 +99,9 @@ public class Rush : MonoBehaviour
     {
         if (life <= 0)
         {
+            Instantiate(rushXP, transform.position, quaternion.identity);
             Destroy(gameObject);
         }
+        
     }
 }
