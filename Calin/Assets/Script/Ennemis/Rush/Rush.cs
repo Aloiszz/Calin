@@ -14,7 +14,7 @@ public class Rush : MonoBehaviour
     public SO_Rush rush_SO;
     public bool canShoot = true;
 
-    public static Rush instance;
+    //public static Rush instance;
 
     [Header("ScriptableObject")] 
     public int levelPlayer;
@@ -28,7 +28,7 @@ public class Rush : MonoBehaviour
     public float timeDestroyBullet;
 
     
-    private void Awake()
+    /*private void Awake()
     {
         if (instance != null && instance != this) 
         {
@@ -38,7 +38,7 @@ public class Rush : MonoBehaviour
         { 
             instance = this; 
         } 
-    }
+    }*/
 
     private void Start()
     {

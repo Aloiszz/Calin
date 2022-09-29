@@ -16,7 +16,7 @@ public class RushBullet : MonoBehaviour
 
     private void Update()
     {
-        Destroy(gameObject, Rush.instance.timeDestroyBullet);
+        Destroy(gameObject, 5);
     }
 
     private void OnTriggerEnter2D(Collider2D col)

@@ -1,42 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4fd0ec5-4530-421e-a94f-ac5ce9d656db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Anim bouboule d'Xp.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anim bouboule d'Xp.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anim bouboule gentil.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anim bouboule gentil.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anim bouboule méchante.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anim bouboule méchante.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bouboule Gentil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bouboule Gentil.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bouboule Gentil_0.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bouboule Gentil_0.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bouboule méchante.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bouboule méchante.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bouboule méchante_0.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bouboule méchante_0.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Boubouled'EXP.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Boubouled'EXP.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/La bouboule d'XP (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/La bouboule d'XP (1).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/La bouboule d'XP.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/La bouboule d'XP.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Kevin_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Kevin_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/border.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/border.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/heart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/le fameux pixel blan.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/le fameux pixel blan.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="d4fd0ec5-4530-421e-a94f-ac5ce9d656db" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../Caverne-Merveilleuse/CarverneMerveilleuse/Assets/Prefab/Maps/RoomSpawner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Caverne-Merveilleuse/CarverneMerveilleuse/Assets/Script/AI/Mechant.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ennemis/Rush/RushBullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ennemis/Rush/XpRush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/Chrono.cs" root0="FORCE_HIGHLIGHTING" />
@@ -96,6 +69,7 @@
       <workItem from="1664265626352" duration="28887000" />
       <workItem from="1664352057677" duration="2556000" />
       <workItem from="1664354682980" duration="18444000" />
+      <workItem from="1664438911943" duration="12502000" />
     </task>
     <servers />
   </component>

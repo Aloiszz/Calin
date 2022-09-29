@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour
 {
-
-    public static int scoreValue = 0;
     private Text score;
 
     void Start()
@@ -16,14 +14,7 @@ public class ScoreScript : MonoBehaviour
     
     void Update()
     {
-        score.text = "Score:" + scoreValue;
-        // a supprimé
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            scoreValue += 50;
-        }  // a suprrimé
+        score.text = "Score :  " + XP_Manager.instance.current_XP;
     }  
 }
-                                /*écrire dans le script des ennemis
-                                ScoreScript.scoreValue += 10;    
-                                10 étant le score obtenu lors d'un kill*/
+                                
