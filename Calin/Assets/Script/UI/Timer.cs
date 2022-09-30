@@ -29,6 +29,17 @@ public class Timer : MonoBehaviour
             VagueManager.instance.vagueTimerIndex++; 
             VagueManager.instance.vagueTimer[VagueManager.instance.vagueTimerIndex] = tps;
             VagueManager.instance.isSpawn = true;
+            
+        }
+
+        if (VagueManager.instance.lifeTimer[VagueManager.instance.lifeTimerIndex] >= 0)
+        {
+            VagueManager.instance.lifeTimer[VagueManager.instance.lifeTimerIndex] -= Time.deltaTime;
+        }
+        else
+        {
+            VagueManager.instance.lifeTimerIndex++; 
+            VagueManager.instance.isSpawnCoeur = true;
         }
         
     }
