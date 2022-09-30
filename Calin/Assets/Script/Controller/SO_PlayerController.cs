@@ -15,7 +15,8 @@ public class SO_PlayerController : ScriptableObject
     public float dashInvinsibleTime;
 
     [Header("Life")]
-    public int life;
+    public List<int> nextLifeLevel;
+    public int currentLife;
     public float invinsibleTimer;
 
     [Header("Drag")]

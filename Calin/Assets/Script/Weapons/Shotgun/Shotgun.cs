@@ -1,12 +1,9 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using Unity.Mathematics;
-using UnityEditor.Timeline;
-using UnityEditor.U2D;
 using UnityEngine;
-using UnityEngine.U2D;
+
 
 public class Shotgun : MonoBehaviour
 {
@@ -193,20 +190,6 @@ public class Shotgun : MonoBehaviour
                 spawnBullet.transform.right = x;
                 spawnBullet.GetComponent<Rigidbody2D>().AddForce(spawnBullet.transform.right * velocityRight);
                 
-                /*switch (i)
-                {
-                    case 0:
-                        var x = lastDirection + new Vector2(lastDirection.x, 1);
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * velocityRight);
-                        break;
-                    case 1:
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(lastDirection * velocityRight);
-                        break;
-                    case 2:
-                        var y = lastDirection + new Vector2(lastDirection.x, -1).normalized;
-                        spawnBullet.GetComponent<Rigidbody2D>().AddForce(y.normalized * velocityRight);
-                        break;
-                }*/
             }
         }
         if (lastDirection == Vector2.left)

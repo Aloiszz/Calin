@@ -13,12 +13,12 @@ public class SO_Rush : ScriptableObject
     public List<float> velocity;
     public List<float> numberBullet;
     public List<int> xp;
-    
-    
-    
-    
-    
-    
+    public List<int> damage;
+
+
+
+
+
     public List<float> timeCooldown;
     public int timeCooldownIndex;
     

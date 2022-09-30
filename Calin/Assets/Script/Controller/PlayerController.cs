@@ -36,7 +36,6 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        playerSO.life = 4;
         playerSO.isDash = true;
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
@@ -53,13 +52,6 @@ public class PlayerController : MonoBehaviour
     {
         Dash();
         Attack();
-        if (playerSO.life == 0)
-        {
-            Destroy(gameObject);
-            Instantiate(deathBloodPS, gameObject.transform.position, quaternion.identity);
-        }
-
-        
     }
 
     private void GameMove()
@@ -91,16 +83,6 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(Vector2.right * playerSO.speedMovement);
             lastMovement.Add(Vector2.right);
         }
-    }
-
-    private void Shoot()
-    {
-        
-    }
-    public void LoseLife()
-    {
-        playerSO.life -= 1;
-        Instantiate(bloodPS, gameObject.transform.position, quaternion.identity);
     }
 
     private void Dash()
