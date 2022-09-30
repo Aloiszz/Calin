@@ -2007,7 +2007,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569220624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.9999998, y: 2.5, z: 9.999474}
+  m_LocalPosition: {x: 3.0000005, y: 2.5, z: 9.999474}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6412,7 +6412,7 @@ MonoBehaviour:
   target: {fileID: 0}
   Rush: {fileID: 3916079150601195956, guid: 0d5ef81a6fe69f442943c5f431325d72, type: 3}
   heart: {fileID: 0}
-  RushNumber: 05000000050000000a0000000a0000000a00000014000000140000000a0000000a0000000a0000000f0000000f0000000f00000014000000140000001900000019000000
+  RushNumber: 05000000050000000a0000000a0000000a0000000f00000014000000140000001e0000001e0000000f0000000f0000000f00000014000000140000001900000019000000
   rushNumberIndex: 0
   vagueTimer:
   - 10
@@ -6421,8 +6421,8 @@ MonoBehaviour:
   - 15
   - 15
   - 30
-  - 45
-  - 45
+  - 30
+  - 30
   - 45
   - 30
   - 20
@@ -6433,9 +6433,10 @@ MonoBehaviour:
   - 10
   - 10
   vagueTimerIndex: 0
-  lifeDrop: 
+  lifeDrop: 01000000
   lifeDropIndex: 0
-  lifeTimer: []
+  lifeTimer:
+  - 10
   lifeTimerIndex: 0
   isSpawn: 1
   isSpawnCoeur: 0
