@@ -5,6 +5,7 @@ using UnityEngine;
 using DG.Tweening;
 using Unity.Mathematics;
 using Random = UnityEngine.Random;
+using DG.Tweening;
 
 
 public class Rush : MonoBehaviour
@@ -97,6 +98,7 @@ public class Rush : MonoBehaviour
     public void OnTouched()
     {
         life -= Shotgun.instance.bulletDamage;
+        //DOColor
     }
 
     void Death()
