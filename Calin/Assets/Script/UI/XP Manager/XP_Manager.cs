@@ -79,7 +79,7 @@ public class XP_Manager : MonoBehaviour
         _rushObjs = GameObject.FindGameObjectsWithTag("Rush");
         foreach (GameObject rush in _rushObjs)
         {
-            rush.GetComponent<Rush>().levelPlayer++;
+            //rush.GetComponent<Rush>().levelPlayer++;
             rush.GetComponent<Rush>().SecureSO();
         }
         /*GameObject.FindGameObjectWithTag("Rush").GetComponent<Rush>().levelPlayer++;
