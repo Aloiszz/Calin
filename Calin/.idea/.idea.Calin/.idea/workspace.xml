@@ -14,6 +14,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ennemis/Rush/RushBullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ennemis/Rush/XpRush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Life/LifeBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Life/LifeBoxSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LifeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/Chrono.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
@@ -92,7 +94,7 @@
       <workItem from="1664352057677" duration="2556000" />
       <workItem from="1664354682980" duration="18444000" />
       <workItem from="1664438911943" duration="26523000" />
-      <workItem from="1664525518871" duration="9749000" />
+      <workItem from="1664525518871" duration="12702000" />
     </task>
     <servers />
   </component>
