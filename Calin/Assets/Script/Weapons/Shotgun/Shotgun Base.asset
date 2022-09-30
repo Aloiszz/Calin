@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number:
   - 3
+  - 4
   - 8
-  - 16
   numberIndex: 0
   cadency:
   - 1
@@ -31,9 +31,6 @@ MonoBehaviour:
   axeShootIndex: 0
   levelPlayer: 0
   bulletDamage:
-  - 5
-  - 5
-  - 5
   - 5
   - 5
   - 5
