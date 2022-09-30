@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class LifeBox : MonoBehaviour
 {
@@ -11,7 +12,9 @@ public class LifeBox : MonoBehaviour
 
     public LifeBoxSO heartSO;
     public int heartValue;
-    
+
+
+
     private void Update()
     {
         coeur.transform.Rotate (50*Time.deltaTime,0, 0);

@@ -4,6 +4,7 @@ using Pathfinding;
 using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using DG.Tweening;
 
 public class VagueManager : MonoBehaviour
 {
@@ -70,9 +71,10 @@ public class VagueManager : MonoBehaviour
         {
             for (int k = 0; k < lifeDrop[lifeDropIndex]; k++)
             {
-                xBorderHeart = Random.Range(-20f, 20f);
-                yBorderHeart = Random.Range(-20f, 20f);
-                Instantiate(heart, PlayerController.instance.transform.position + new Vector3(xBorderHeart, yBorderHeart, 0), quaternion.identity);
+                xBorderHeart = Random.Range(-8f, 8f);
+                yBorderHeart = Random.Range(-8f, 8f);
+                newLife = Instantiate(heart, PlayerController.instance.transform.position + new Vector3(xBorderHeart, yBorderHeart, 0), quaternion.identity);
+                newLife.gameObject.transform.DOScale(new Vector3(1.184821f, 2.023294f, 1), 1f);
             }
             isSpawnCoeur = false;
         }
