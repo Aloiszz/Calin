@@ -10,7 +10,22 @@ public class Chrono : MonoBehaviour
     private float minutes;
     private float hours;
 
-    [SerializeField] private TextMeshProUGUI stopWatchText;
+    public TextMeshProUGUI stopWatchText;
+    
+    
+    public static Chrono instance;
+    
+    private void Awake()
+    {
+        if (instance != null && instance != this) 
+        {
+            Destroy(gameObject);
+        } 
+        else 
+        { 
+            instance = this; 
+        }
+    }
     void Start()
     {
         timer = 0;
