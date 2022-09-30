@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotgunBullet: {fileID: 3382658260587305931, guid: 4974b04329ee4a84ea153a4d89ef9f2d, type: 3}
   rushXP: {fileID: 4309990073933954382, guid: 4f524213c6f3ae146803ad04f85f34c2, type: 3}
+  destruction: {fileID: 1374080534569733551, guid: 618896a0f8328c448858a691967aa258, type: 3}
   rush_SO: {fileID: 11400000, guid: b199c6ceff39ef24b8b21267514f29c2, type: 2}
   canShoot: 1
   levelPlayer: 0

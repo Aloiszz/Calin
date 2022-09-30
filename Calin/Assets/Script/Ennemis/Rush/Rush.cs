@@ -11,6 +11,7 @@ public class Rush : MonoBehaviour
 {
     public GameObject shotgunBullet;
     public GameObject rushXP;
+    public ParticleSystem destruction;
     public SO_Rush rush_SO;
     public bool canShoot = true;
 
@@ -99,7 +100,8 @@ public class Rush : MonoBehaviour
         if (life <= 0)
         {
             Instantiate(rushXP, transform.position, quaternion.identity);
-            SpecialEffectsHelper.Instance.Explosion(transform.position);
+            Instantiate(destruction, transform.position, quaternion.identity);
+            //SpecialEffectsHelper.Instance.Explosion(transform.position);
             Destroy(gameObject);
         }
         
