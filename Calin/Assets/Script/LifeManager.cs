@@ -48,7 +48,7 @@ public class LifeManager : MonoBehaviour
         
         life_Value = (current_life / maxLife) * 100;
         Debug.Log(life_Value);
-        life_Bar.DOFillAmount((float)life_Value, 0.15f);
+        life_Bar.DOFillAmount((float)life_Value - maxLife, 0.15f);
         lifeTxt.text = current_life + " / " + nextLifeLevel;
 
         Death();
