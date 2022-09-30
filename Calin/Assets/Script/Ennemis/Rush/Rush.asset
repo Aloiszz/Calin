@@ -15,8 +15,8 @@ MonoBehaviour:
   levelPlayer: 0
   life:
   - 3
-  - 6
   - 10
+  - 15
   - 15
   - 20
   - 25
@@ -34,9 +34,9 @@ MonoBehaviour:
   - 500
   numberBullet:
   - 1
-  - 1
   - 2
-  - 2
+  - 3
+  - 4
   - 4
   - 4
   - 4
