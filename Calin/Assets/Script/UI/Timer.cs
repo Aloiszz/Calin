@@ -26,6 +26,7 @@ public class Timer : MonoBehaviour
         }
         else
         {
+            VagueManager.instance.vagueTimerIndex++; 
             VagueManager.instance.vagueTimer[VagueManager.instance.vagueTimerIndex] = tps;
             VagueManager.instance.isSpawn = true;
         }
