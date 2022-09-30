@@ -19,7 +19,7 @@ public class Rush : MonoBehaviour
     //public static Rush instance;
 
     [Header("ScriptableObject")] 
-    public int levelPlayer;
+    //public int levelPlayer;
     public float life;
     public float velocity;
     public float numberBullet;
@@ -29,32 +29,29 @@ public class Rush : MonoBehaviour
     public float timeCooldown;
     public int timeCooldownIndex;
     public float timeDestroyBullet;
-
     
-    /*private void Awake()
-    {
-        if (instance != null && instance != this) 
-        {
-            
-        } 
-        else 
-        { 
-            instance = this; 
-        } 
-    }*/
 
     private void Start()
     {
-        //SecureSO();
+        life = rush_SO.life[XP_Manager.instance.levelPlayer];
+        velocity = rush_SO.velocity[XP_Manager.instance.levelPlayer];
+        numberBullet = rush_SO.numberBullet[XP_Manager.instance.levelPlayer];
+        xp = rush_SO.xp[XP_Manager.instance.levelPlayer];
+        damage = rush_SO.damage[XP_Manager.instance.levelPlayer];
+
+        timeCooldown = rush_SO.timeCooldown[XP_Manager.instance.levelPlayer];
+        timeCooldownIndex = rush_SO.timeCooldownIndex;
+
+        timeDestroyBullet = rush_SO.timeDestroyBullet;
     }
 
     public void SecureSO()
     {
-        life = rush_SO.life[levelPlayer];
-        velocity = rush_SO.velocity[levelPlayer];
-        numberBullet = rush_SO.numberBullet[levelPlayer];
-        xp = rush_SO.xp[levelPlayer];
-        damage = rush_SO.damage[levelPlayer];
+        life = rush_SO.life[XP_Manager.instance.levelPlayer];
+        velocity = rush_SO.velocity[XP_Manager.instance.levelPlayer];
+        numberBullet = rush_SO.numberBullet[XP_Manager.instance.levelPlayer];
+        xp = rush_SO.xp[XP_Manager.instance.levelPlayer];
+        damage = rush_SO.damage[XP_Manager.instance.levelPlayer];
 
         timeCooldown = rush_SO.timeCooldown[timeCooldownIndex];
         timeCooldownIndex = rush_SO.timeCooldownIndex;
