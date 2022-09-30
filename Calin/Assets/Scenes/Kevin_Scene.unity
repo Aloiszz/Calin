@@ -598,6 +598,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &488485652 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6340015027980761389, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+  m_PrefabInstance: {fileID: 976408665}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &498337843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2014,6 +2019,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761391, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 488485646}
+    - target: {fileID: 6340015027980761391, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 488485652}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
 --- !u!1 &1049770586
