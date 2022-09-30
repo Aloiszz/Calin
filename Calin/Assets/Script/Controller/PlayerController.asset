@@ -17,7 +17,8 @@ MonoBehaviour:
   dashForce: 500
   dashReload: 0.5
   dashInvinsibleTime: 0
-  life: 4
+  nextLifeLevel: 1400000016000000180000001a0000001c0000001e0000002000000022000000
+  currentLife: 0
   invinsibleTimer: 0
   linearDragDeceleration: 0.41
   linearDragMultiplier: 9.36

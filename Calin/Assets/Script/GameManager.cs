@@ -2,14 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.UI;
 using DG.Tweening;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
-    public CanvasGroup baseCanvas;
+    public Canvas baseCanvas;
+    public Canvas pauseCanvas;
+    public Canvas ameliorationCanvas;
+    
+    public CanvasGroup _base;
     public CanvasGroup pause;
     public CanvasGroup amelioration;
     public Volume globalVolume;
@@ -34,19 +38,28 @@ public class GameManager : MonoBehaviour
         {
             Pause();
         }
+        
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Amelioration();
+        }
     }
 
     void Pause()
     {
+        pauseCanvas.enabled = true;
+        baseCanvas.enabled = false;
         pause.DOFade(1, 0.5f);
-        baseCanvas.DOFade(0, 0.5f);
+        _base.DOFade(0, 0.5f);
         StartCoroutine(PauseTime());
     }
     public void UnPause()
     {
         StartCoroutine(UnPauseTime());
+        baseCanvas.enabled = true;
+        pauseCanvas.enabled = false;
         pause.DOFade(0, 0.5f);
-        baseCanvas.DOFade(1, 0.5f);
+        _base.DOFade(1, 0.5f);
     }
 
     public void MenuPrincipal()
@@ -73,7 +86,7 @@ public class GameManager : MonoBehaviour
     public void Amelioration()
     {
         globalVolume.enabled = false;
-        baseCanvas.DOFade(0, 0.5f);
+        _base.DOFade(0, 0.5f);
         amelioration.DOFade(1, 0.5f);
         StartCoroutine(PauseTime());
     }
@@ -81,7 +94,7 @@ public class GameManager : MonoBehaviour
     public void UnAmelioration()
     {
         globalVolume.enabled = true;
-        baseCanvas.DOFade(1, 0.5f);
+        _base.DOFade(1, 0.5f);
         amelioration.DOFade(0, 0.5f);
         StartCoroutine(UnPauseTime());
     }
@@ -89,55 +102,59 @@ public class GameManager : MonoBehaviour
     public void BtnAmelioration1()
     {
         AxeDeTire();
-        UnAmelioration();
     }
     
     public void BtnAmelioration2()
     {
         AddVelocity();
-        UnAmelioration();
     }
     
     public void BtnAmelioration3()
     {
         AddNumber();
-        UnAmelioration();
     }
     
     /*-------------------------Amelioration-----------------------------------------*/
     public void AxeDeTire()
     {
+        UnAmelioration();
         if (Shotgun.instance.axeShootIndex < Shotgun.instance.shotgun_SO.axeShoot.Count)
         {
             Shotgun.instance.axeShootIndex++;
+            Shotgun.instance.SecureSO();
         }
-        Shotgun.instance.SecureSO();
+        
     }
     
     public void AddVelocity()
     {
+        UnAmelioration();
         if (Shotgun.instance.velocityIndex < Shotgun.instance.shotgun_SO.velocity.Count)
         {
             Shotgun.instance.velocityIndex++;
+            Shotgun.instance.SecureSO();
         }
-        Shotgun.instance.SecureSO();
     }
     
     public void AddCadency()
     {
+        UnAmelioration();
         if (Shotgun.instance.cadencyIndex < Shotgun.instance.shotgun_SO.cadency.Count)
         {
             Shotgun.instance.cadencyIndex++;
+            Shotgun.instance.SecureSO();
         }
-        Shotgun.instance.SecureSO();
+        
     }
     
     public void AddNumber()
     {
+        UnAmelioration();
         if (Shotgun.instance.numberIndex < Shotgun.instance.shotgun_SO.number.Count)
         {
             Shotgun.instance.numberIndex++;
+            Shotgun.instance.SecureSO();
         }
-        Shotgun.instance.SecureSO();
+        
     }
 }

@@ -23,7 +23,10 @@ public class RushBullet : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
+            LifeManager.instance.current_life  -= 
+                GameObject.FindGameObjectWithTag("Rush").GetComponent<Rush>().damage;;
+            
         }
     }
 }

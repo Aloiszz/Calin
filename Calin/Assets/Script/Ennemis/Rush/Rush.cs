@@ -23,6 +23,7 @@ public class Rush : MonoBehaviour
     public float velocity;
     public float numberBullet;
     public int xp;
+    public int damage;
     /*-------------------------------------------*/
     public float timeCooldown;
     public int timeCooldownIndex;
@@ -52,6 +53,7 @@ public class Rush : MonoBehaviour
         velocity = rush_SO.velocity[levelPlayer];
         numberBullet = rush_SO.numberBullet[levelPlayer];
         xp = rush_SO.xp[levelPlayer];
+        damage = rush_SO.damage[levelPlayer];
 
         timeCooldown = rush_SO.timeCooldown[timeCooldownIndex];
         timeCooldownIndex = rush_SO.timeCooldownIndex;
@@ -74,8 +76,10 @@ public class Rush : MonoBehaviour
         {
             GameObject projectile = Instantiate(shotgunBullet, transform.position, Quaternion.identity);
             
-            var x = Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*numberBullet/2f), Vector3.forward) * Vector3.up;
-            projectile.GetComponent<Rigidbody2D>().AddForce((PlayerController.instance.transform.position - x).normalized * velocity);
+            var x = Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*numberBullet/2f), Vector3.forward) * (PlayerController.instance.transform.position - transform.position).normalized;
+            projectile.transform.up = x;
+            projectile.GetComponent<Rigidbody2D>().AddForce(projectile.transform.up  * velocity);
+            //projectile.GetComponent<Rigidbody2D>().AddForce((PlayerController.instance.transform.position - transform.position).normalized * velocity);
         }
         
         yield return new WaitForSeconds(timeCooldown);
