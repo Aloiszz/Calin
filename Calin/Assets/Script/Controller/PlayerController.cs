@@ -21,6 +21,9 @@ public class PlayerController : MonoBehaviour
     public GameObject deathBloodPS;
     public GameObject bloodPS;
 
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -82,6 +85,12 @@ public class PlayerController : MonoBehaviour
             //transform.Translate(Vector3.right * speed * Time.deltaTime);
             rb.AddForce(Vector2.right * playerSO.speedMovement);
             lastMovement.Add(Vector2.right);
+
+            //Animator
+            
+            Flip(rb.velocity.x);
+            float characterVelocity = Mathf.Abs(rb.velocity.x);
+            animator.SetFloat("Speed", rb.velocity.x);
         }
     }
 
@@ -135,4 +144,19 @@ public class PlayerController : MonoBehaviour
         PlayerAttackCollision.instance.sprite.enabled = false;
         PlayerAttackCollision.instance.coll.enabled = false;
     }*/
+    
+    //animator
+    void Flip(float _velocity)
+    {
+        if (_velocity > 0.1f)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (_velocity < -0.1f)
+        {
+            spriteRenderer.flipX = true;
+        }
+       
+    }
+    
 }
