@@ -29,8 +29,10 @@ public class Rush : MonoBehaviour
     public float timeCooldown;
     public int timeCooldownIndex;
     public float timeDestroyBullet;
-    
 
+
+    public bool isShooting = true;
+    public bool isWalking;
     private void Start()
     {
         life = rush_SO.life[XP_Manager.instance.levelPlayer];
@@ -86,10 +88,14 @@ public class Rush : MonoBehaviour
 
     void OnSeePlayer()
     {
-        if (canShoot)
+        if (isShooting)
         {
-            StartCoroutine(Shoot());
+            if (canShoot)
+            {
+                StartCoroutine(Shoot());
+            }
         }
+        
     }
 
     public void OnTouched()

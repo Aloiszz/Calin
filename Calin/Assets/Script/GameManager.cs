@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI txtIndicationDeath;
     
     public static GameManager instance;
+
+    public bool isVoileBlanc;
+    public Image voileBlanc;
     
     private void Awake()
     {
@@ -66,10 +69,21 @@ public class GameManager : MonoBehaviour
         {
             Amelioration();
         }
-        
-        
-        
+
+        if (isVoileBlanc)
+        {
+            StartCoroutine(VoileBlanc());
+        }
     }
+
+    IEnumerator VoileBlanc()
+    {
+        voileBlanc.GetComponent<Image>().DOFade(1, 0.2f);
+        yield return new WaitForSeconds(1.5f);
+        voileBlanc.GetComponent<Image>().DOFade(0, 0.5f);
+        isVoileBlanc = false;
+    }
+    
 
     void Pause()
     {
