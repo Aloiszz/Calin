@@ -1834,7 +1834,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1558945134
 GameObject:
@@ -2389,6 +2389,10 @@ PrefabInstance:
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber2.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: lifeDrop.Array.data[2]
       value: 2
       objectReference: {fileID: 0}
@@ -2531,6 +2535,26 @@ PrefabInstance:
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: RushNumber.Array.data[17]
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber2.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber2.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber2.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber2.Array.data[3]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber2.Array.data[4]
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: vagueTimer.Array.data[10]
