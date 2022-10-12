@@ -19,6 +19,9 @@ public class VagueManager : MonoBehaviour
     
     public List<float> vagueTimer;
     public int vagueTimerIndex;
+    
+    public List<float> vagueTimer2;
+    public int vagueTimerIndex2;
 
     public List<int> lifeDrop;
     public int lifeDropIndex;
