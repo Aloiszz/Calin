@@ -129,7 +129,7 @@ public class VagueManager : MonoBehaviour
         
         if (isSpawn3)
         {
-            for (int p = 1; p < RushNumber2[rushNumberIndex2]+1; p++)
+            for (int p = 1; p < RushNumber3[rushNumberIndex3]+1; p++)
             {
                 xBorder3= Random.Range(-30f, 50f);
                 yBorder3 = Random.Range(-30f, 50f);
@@ -143,7 +143,7 @@ public class VagueManager : MonoBehaviour
         
         if (isSpawn4)
         {
-            for (int t = 1; t < RushNumber2[rushNumberIndex2]+1; t++)
+            for (int t = 1; t < RushNumber4[rushNumberIndex4]+1; t++)
             {
                 xBorder4= Random.Range(-30f, 50f);
                 yBorder4 = Random.Range(-30f, 50f);
