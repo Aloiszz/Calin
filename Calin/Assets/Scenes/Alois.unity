@@ -2172,6 +2172,14 @@ PrefabInstance:
       value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: lifeDrop.Array.data[2]
       value: 2
       objectReference: {fileID: 0}
@@ -2252,24 +2260,84 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber.Array.data[2]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber.Array.data[5]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: RushNumber.Array.data[6]
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: RushNumber.Array.data[7]
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: RushNumber.Array.data[8]
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber.Array.data[9]
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer.Array.data[1]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer.Array.data[2]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer.Array.data[3]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer.Array.data[4]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer.Array.data[5]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: RushNumber.Array.data[10]
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
-      propertyPath: vagueTimer.Array.data[10]
+      propertyPath: RushNumber.Array.data[11]
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber.Array.data[13]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber.Array.data[15]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber.Array.data[17]
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer.Array.data[10]
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer.Array.data[11]
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer.Array.data[15]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer.Array.data[17]
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544777, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: m_RootOrder
