@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e756a0bf0ba104ba6fec292ac821ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotgunBullet: {fileID: 3382658260587305931, guid: 360955dd59878a34a9b4cc44ce6563bb, type: 3}
+  shotgunBullet: {fileID: 3382658260587305931, guid: 42f9676507fd7064fad5c3ac87c37754, type: 3}
   rushXP: {fileID: 4309990073933954382, guid: 4f524213c6f3ae146803ad04f85f34c2, type: 3}
   destruction: {fileID: 1374080534569733551, guid: 618896a0f8328c448858a691967aa258, type: 3}
   rush_SO: {fileID: 11400000, guid: ecb0cd47a2375e442873ece9a8a99b43, type: 2}
