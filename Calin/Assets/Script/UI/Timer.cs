@@ -43,5 +43,16 @@ public class Timer : MonoBehaviour
             VagueManager.instance.isSpawnCoeur = true;
         }
         
+        
+        if (VagueManager.instance.NUKETimer[VagueManager.instance.NUKETimerIndex] >= 0)
+        {
+            VagueManager.instance.NUKETimer[VagueManager.instance.NUKETimerIndex] -= Time.deltaTime;
+        }
+        else
+        {
+            VagueManager.instance.NUKETimerIndex++; 
+            VagueManager.instance.isSpawnNUKE = true;
+        }
+        
     }
 }

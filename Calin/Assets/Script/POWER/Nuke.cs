@@ -28,13 +28,27 @@ public class Nuke : MonoBehaviour
         {
             DestroyBullet();
             VoileBlanc();
-            Destroy(gameObject);
-            _rushObjs2 = GameObject.FindGameObjectsWithTag("Rush");
-            foreach (GameObject rush in _rushObjs2)
-            {
-                rush.GetComponent<Rush>().isShooting = false;
-            };
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
+            
+            StartCoroutine(RESHootAgain());
         }
+    }
+
+    IEnumerator RESHootAgain()
+    {
+        _rushObjs2 = GameObject.FindGameObjectsWithTag("Rush");
+        foreach (GameObject rush in _rushObjs2)
+        {
+            rush.GetComponent<Rush>().isShooting = false;
+        };
+        
+        yield return new WaitForSeconds(2.5f);
+        Destroy(gameObject);
+        foreach (GameObject rush in _rushObjs2)
+        {
+            rush.GetComponent<Rush>().isShooting = true;
+        };
     }
 
     void DestroyBullet()

@@ -45,6 +45,12 @@ public class VagueManager : MonoBehaviour
     private float xBorderNUKE;
     private float yBorderNUKE;
     
+    
+    public List<int> NUKEDrop;
+    public int NUKEDropIndex;
+    public List<float> NUKETimer;
+    public int NUKETimerIndex;
+    
     public static VagueManager instance;
     
     private void Awake()
@@ -109,7 +115,7 @@ public class VagueManager : MonoBehaviour
         
         if (isSpawnNUKE)
         {
-            for (int p = 0; p < lifeDrop[lifeDropIndex]; p++)
+            for (int p = 0; p < NUKEDrop[NUKEDropIndex]; p++)
             {
                 xBorderNUKE = Random.Range(-8f, 8f);
                 yBorderNUKE = Random.Range(-8f, 8f);

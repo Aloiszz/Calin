@@ -2365,6 +2365,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: NUKE
+      value: 
+      objectReference: {fileID: 4943560268890915468, guid: 324e827dec798b64da1743b0b73dcd2a, type: 3}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: Rush2
       value: 
       objectReference: {fileID: 3916079150601195956, guid: 625737960b006c34d985d7f233859e85, type: 3}
