@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Shotgun
   - Rush
+  - RushBullet
   layers:
   - Default
   - TransparentFX

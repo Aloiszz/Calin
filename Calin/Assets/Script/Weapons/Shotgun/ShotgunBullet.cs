@@ -13,7 +13,7 @@ public class ShotgunBullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<CircleCollider2D>();
-
+        /*StartCoroutine(Wait());*/
     }
 
     private void Update()
@@ -30,4 +30,10 @@ public class ShotgunBullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    /*IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1.56f);
+        gameObject.transform.DOScale(new Vector3(0, 0, 0), 0.5f);
+    }*/
 }

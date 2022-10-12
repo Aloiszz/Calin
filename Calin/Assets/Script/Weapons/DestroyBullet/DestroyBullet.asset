@@ -12,13 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d276a4ba66657459f32b72e5183429, type: 3}
   m_Name: DestroyBullet
   m_EditorClassIdentifier: 
-  number: []
+  number:
+  - 1
   numberIndex: 0
-  cadency: []
+  cadency:
+  - 3
   cadencyIndex: 0
-  velocity: []
+  velocity:
+  - 200
   velocityIndex: 0
-  axeShoot: 
+  axeShoot: 010000000200000003000000
   axeShootIndex: 0
   levelPlayer: 0
-  bulletDamage: []
+  bulletDamage:
+  - 3

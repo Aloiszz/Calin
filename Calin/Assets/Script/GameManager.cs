@@ -137,6 +137,7 @@ public class GameManager : MonoBehaviour
 
     public void BtnAmelioration1()
     {
+        //AddWeapon();
         AxeDeTire();
     }
     
@@ -192,5 +193,10 @@ public class GameManager : MonoBehaviour
             Shotgun.instance.SecureSO();
         }
         
+    }
+
+    public void AddWeapon()
+    {
+        DestroyBullet.instance.enabled = true;
     }
 }

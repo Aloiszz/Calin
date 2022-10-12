@@ -22,7 +22,7 @@ public class Shotgun : MonoBehaviour
     [HideInInspector]public float velocityLeft;
 
     public static Shotgun instance;
-    private bool canShoot = true;
+    public bool canShoot = true;
 
     public Vector2 lastDirection;
     

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using TMPro;
 
 public class XP_Manager : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class XP_Manager : MonoBehaviour
     public Image XP_Bar;
     private double xp_Value;
 
-    public Text playerlevelTxt;
+    public TextMeshProUGUI playerlevelTxt;
 
     public int levelPlayer;
     private int levelPlayer1 = 1;

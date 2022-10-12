@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+    public GameObject creditMenuUI;
+    
+    public CanvasGroup pauseMenuCG;
+    public CanvasGroup creditMenuCG;
+
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -52,5 +59,23 @@ public class PauseMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("Alois");
+    }
+
+    public void Credit()
+    { 
+        pauseMenuCG.DOFade(0,0.2f);
+        creditMenuCG.DOFade(1,0.2f);
+    
+        pauseMenuUI.SetActive(false);
+        creditMenuUI.SetActive(true);
+    }
+    
+    public void Menu()
+    { 
+        pauseMenuCG.DOFade(1,0.2f);
+        creditMenuCG.DOFade(0,0.2f);
+    
+        pauseMenuUI.SetActive(true);
+        creditMenuUI.SetActive(false);
     }
 }

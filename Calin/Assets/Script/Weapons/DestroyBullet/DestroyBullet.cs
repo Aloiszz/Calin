@@ -20,7 +20,7 @@ public class DestroyBullet : MonoBehaviour
     [HideInInspector]public Transform shotleft;
     
     public static DestroyBullet instance;
-    private bool canShoot = true;
+    public bool canShoot = true;
 
     public Vector2 lastDirection;
     
@@ -73,24 +73,32 @@ public class DestroyBullet : MonoBehaviour
         yield return new WaitForSeconds(cadency);
         canShoot = true;
     }
-    
+
+    private void Update()
+    {
+        lastDirection = PlayerController.instance.lastMovement[^1];
+        if (canShoot)
+        {
+            StartCoroutine(Shoot());
+        }
+    }
+
     void Choose()
     {
         switch (axeShoot)
         {
             case 1:
-                //ShootBase(); // tir une salve dans la direction du joueur
+                ShootBase(); // tir une salve dans la direction du joueur
                 break;
             case 2:
-                //Shoot2Axe(); // tir 2 salves dans la direction du joueur et la direction -1
+                Shoot2Axe(); // tir 2 salves dans la direction du joueur et la direction -1
                 break;
             case 3:
-                //ShootAllAxe(); // tir 4 salve dans les 4 directions
+                ShootAllAxe(); // tir 4 salve dans les 4 directions
                 break;
         }
     }
-    
-    /*void ShootBase()
+    void ShootBase()
     {
         velocityTop = 0;
         velocityDown = 0;
@@ -140,7 +148,6 @@ public class DestroyBullet : MonoBehaviour
                 spawnBullet.transform.right = x;
                 spawnBullet.GetComponent<Rigidbody2D>().AddForce(spawnBullet.transform.right * velocityRight);
                 
-                
             }
         }
         if (lastDirection == Vector2.left)
@@ -158,5 +165,123 @@ public class DestroyBullet : MonoBehaviour
                 
             }
         }
-    }*/
+    }
+
+    void Shoot2Axe()
+    {
+        velocityTop = 0;
+        velocityDown = 0;
+        velocityRight = 0;
+        velocityLeft = 0;
+        if (lastDirection == Vector2.up || lastDirection == Vector2.down)
+        {
+            velocityDown = -velocity;
+            velocityTop = velocity;
+
+            var angle = 360 / (number+1);
+            
+            for (int i = 0; i < number; i++)
+            {
+                var spawnBullet = Instantiate(laser, shotTop.transform.position, quaternion.identity);
+                
+                var x = (Vector3)Vector2.up + Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*number/2f), Vector3.forward) * (Vector3.up);
+                spawnBullet.transform.up = x;
+                spawnBullet.GetComponent<Rigidbody2D>().AddForce(spawnBullet.transform.up * velocityTop);
+                
+            }
+            for (int i = 0; i < number; i++)
+            {
+                var spawnBullet = Instantiate(laser, shotDown.transform.position, quaternion.identity);
+                
+                var x = (Vector3)Vector2.down + Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*number/2f), Vector3.forward) * -(Vector3.up);
+                spawnBullet.transform.up = x;
+                spawnBullet.GetComponent<Rigidbody2D>().AddForce(-spawnBullet.transform.up * velocityDown);
+                
+            }
+        }
+        if (lastDirection == Vector2.right || lastDirection == Vector2.left)
+        {
+            velocityRight = velocity;
+            velocityLeft = -velocity;
+            var angle = 360 / (number+1);
+            
+            for (int i = 0; i < number; i++)
+            {
+                var spawnBullet = Instantiate(laser, shotRight.transform.position, quaternion.identity);
+                
+                var x = (Vector3)Vector2.right+ Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*number/2f), Vector3.forward) * (Vector3.right);
+                spawnBullet.transform.right = x;
+                spawnBullet.GetComponent<Rigidbody2D>().AddForce(spawnBullet.transform.right * velocityRight);
+            }
+            
+            for (int i = 0; i < number; i++)
+            {
+                var spawnBullet = Instantiate(laser, shotleft.transform.position, quaternion.identity);
+                
+                var x = (Vector3)Vector2.left + Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*number/2f), Vector3.forward) * -(Vector3.right);
+                spawnBullet.transform.right = x;
+                spawnBullet.GetComponent<Rigidbody2D>().AddForce(-spawnBullet.transform.right * velocityLeft);
+                
+            }
+        }
+    }
+
+    void ShootAllAxe()
+    {
+        velocityTop = 0;
+        velocityDown = 0;
+        velocityRight = 0;
+        velocityLeft = 0;
+
+        if (lastDirection == Vector2.up || lastDirection == Vector2.down || lastDirection == Vector2.right ||
+            lastDirection == Vector2.left)
+        {
+            velocityDown = -velocity;
+            velocityTop = velocity;
+            velocityRight = velocity;
+            velocityLeft = -velocity;
+            
+            var angle = 360 / (number+1);
+            for (int i = 0; i < number; i++)
+            {
+                var spawnBullet = Instantiate(laser, shotTop.transform.position, quaternion.identity);
+                
+                var x = (Vector3)Vector2.up + Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*number/2f), Vector3.forward) * (Vector3.up);
+                spawnBullet.transform.up = x;
+                spawnBullet.GetComponent<Rigidbody2D>().AddForce(spawnBullet.transform.up * velocityTop);
+                
+            }
+            for (int i = 0; i < number; i++)
+            {
+                var spawnBullet = Instantiate(laser, shotDown.transform.position, quaternion.identity);
+                
+                var x = (Vector3)Vector2.down + Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*number/2f), Vector3.forward) * -(Vector3.up);
+                spawnBullet.transform.up = x;
+                spawnBullet.GetComponent<Rigidbody2D>().AddForce(-spawnBullet.transform.up * velocityDown);
+                
+            }
+            
+            for (int i = 0; i <number; i++)
+            {
+                var spawnBullet = Instantiate(laser, shotRight.transform.position, quaternion.identity);
+                
+                var x = (Vector3)Vector2.right + Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*number/2f), Vector3.forward) * (Vector3.right);
+                spawnBullet.transform.right = x;
+                spawnBullet.GetComponent<Rigidbody2D>().AddForce(spawnBullet.transform.right * velocityRight);
+                
+            }
+            
+            for (int i = 0; i <number; i++)
+            {
+                var spawnBullet = Instantiate(laser, shotleft.transform.position, quaternion.identity);
+                
+                var x = (Vector3)Vector2.left + Quaternion.AngleAxis(angle/2f+(angle * i)-(angle*number/2f), Vector3.forward) * -(Vector3.right);
+                spawnBullet.transform.right = x;
+                spawnBullet.GetComponent<Rigidbody2D>().AddForce(-spawnBullet.transform.right * velocityLeft);
+                
+            }
+        }
+    }
 }
+    
+    

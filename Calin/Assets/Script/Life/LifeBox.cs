@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class LifeBox : MonoBehaviour
 {
-    [HideInInspector]public GameObject coeur;
+    public GameObject coeur;
     [HideInInspector]public GameObject trait;
     [HideInInspector]public GameObject trait2;
 
@@ -18,8 +18,8 @@ public class LifeBox : MonoBehaviour
     private void Update()
     {
         coeur.transform.Rotate (50*Time.deltaTime,0, 0);
-        trait.transform.Rotate (50*Time.deltaTime,0, 0);
-        trait2.transform.Rotate ( 0,50*Time.deltaTime, 0);
+        //trait.transform.Rotate (50*Time.deltaTime,0, 0);
+        //trait2.transform.Rotate ( 0,50*Time.deltaTime, 0);
         
         heartValue = heartSO.heartValue[XP_Manager.instance.levelPlayer];
     }

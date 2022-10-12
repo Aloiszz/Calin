@@ -29,4 +29,10 @@ public class RushBullet : MonoBehaviour
             
         }
     }
+
+
+    public void Destroy()
+    {
+        Destroy(gameObject);
+    }
 }
