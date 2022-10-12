@@ -13,6 +13,9 @@ public class VagueManager : MonoBehaviour
     public GameObject heart;
     public List<int> RushNumber;
     public int rushNumberIndex;
+    public List<int> RushNumber2;
+    public int rushNumberIndex2;
+    
     public List<float> vagueTimer;
     public int vagueTimerIndex;
 
@@ -56,6 +59,15 @@ public class VagueManager : MonoBehaviour
         if (isSpawn)
         {
             for (int i = 1; i < RushNumber[rushNumberIndex]+1; i++)
+            {
+                xBorder = Random.Range(-30f, 50f);
+                yBorder = Random.Range(-30f, 50f);
+                newEnnemy = Instantiate(Rush, PlayerController.instance.transform.position + new Vector3(xBorder, yBorder, 0), Quaternion.identity);
+                newEnnemy.GetComponent<AIDestinationSetter>().target = target.transform;
+                newEnnemy.GetComponent<Rush>().SecureSO();
+            }
+            
+            for (int i = 1; i < RushNumber2[rushNumberIndex2]+1; i++)
             {
                 xBorder = Random.Range(-30f, 50f);
                 yBorder = Random.Range(-30f, 50f);
