@@ -44,10 +44,10 @@ public class XP_Manager : MonoBehaviour
     private void Update()
     {
         //XP_Bar.fillAmount xp_Value= (current_XP % nextXPLevel) * 0.01f;
-
+        
         xp_Value =  (current_XP % nextXPLevel) *0.01f;;
 
-        XP_Bar.DOFillAmount((float)xp_Value, 0.15f);
+        XP_Bar.DOFillAmount((float)current_XP / (float)nextXPLevel, 0.15f);
         //Debug.Log((current_XP % nextXPLevel) * 0.01f);
         
         LevelUp();
@@ -57,6 +57,7 @@ public class XP_Manager : MonoBehaviour
     {
         current_XP = XP_ManagerSO.current_XP;
         nextXPLevel = XP_ManagerSO.nextXPLevel[levelPlayer];
+        Debug.Log(nextXPLevel);
     }
 
     public void LevelUp()
