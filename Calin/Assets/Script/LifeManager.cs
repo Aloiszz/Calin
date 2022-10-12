@@ -47,7 +47,7 @@ public class LifeManager : MonoBehaviour
         //XP_Bar.fillAmount xp_Value= (current_XP % nextXPLevel) * 0.01f;
         
         //life_Value = () ;
-        life_Bar.DOFillAmount((float)current_life / maxLife, 0.15f);
+        life_Bar.DOFillAmount((float)current_life / nextLifeLevel, 0.15f);
         
         lifeTxt.text = current_life + " / " + nextLifeLevel;
 
@@ -57,7 +57,7 @@ public class LifeManager : MonoBehaviour
 
     public void Death()
     {
-        if (current_life < 0)
+        if (current_life <= 0)
         {
             Destroy(PlayerController.instance.gameObject);
             GameManager.instance.AnnonceMort();

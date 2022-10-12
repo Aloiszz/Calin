@@ -11,7 +11,7 @@ public class XP_Manager : MonoBehaviour
     public SO_LevelManager XP_ManagerSO;
 
     public Image XP_Bar;
-    private double xp_Value;
+    private float xp_Value;
 
     public TextMeshProUGUI playerlevelTxt;
 
@@ -45,7 +45,7 @@ public class XP_Manager : MonoBehaviour
     {
         //XP_Bar.fillAmount xp_Value= (current_XP % nextXPLevel) * 0.01f;
 
-        xp_Value =  (current_XP % nextXPLevel) * 0.01f;;
+        xp_Value =  (current_XP % nextXPLevel) *0.01f;;
 
         XP_Bar.DOFillAmount((float)xp_Value, 0.15f);
         //Debug.Log((current_XP % nextXPLevel) * 0.01f);
