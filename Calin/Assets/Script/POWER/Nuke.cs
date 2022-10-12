@@ -43,7 +43,7 @@ public class Nuke : MonoBehaviour
             rush.GetComponent<Rush>().isShooting = false;
         };
         
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(3.5f);
         Destroy(gameObject);
         foreach (GameObject rush in _rushObjs2)
         {
