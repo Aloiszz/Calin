@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelPlayer: 0
   life:
-  - 9
-  - 9
-  - 9
-  - 15
-  - 15
+  - 20
+  - 20
+  - 20
+  - 20
+  - 20
   - 25
   - 25
   - 30
