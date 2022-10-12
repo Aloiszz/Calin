@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40d647ddb5ccb04e946e28d33e1a3ca, type: 3}
+  m_Name: Rush 4
+  m_EditorClassIdentifier: 
+  levelPlayer: 0
+  life:
+  - 9
+  - 9
+  - 9
+  - 15
+  - 15
+  - 25
+  - 25
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
+  velocity:
+  - 150
+  - 150
+  - 150
+  - 200
+  - 200
+  - 200
+  - 200
+  - 300
+  - 300
+  - 300
+  - 300
+  - 300
+  - 300
+  - 300
+  - 300
+  numberBullet:
+  - 24
+  - 24
+  - 24
+  - 24
+  - 24
+  - 24
+  - 24
+  - 24
+  - 24
+  - 24
+  - 24
+  - 24
+  - 24
+  - 24
+  - 24
+  xp: 0f0000000f0000000f0000000f0000000f0000001900000019000000190000001e0000001e000000280000002800000028000000280000002800000028000000
+  damage: 0500000005000000050000000800000008000000080000000a0000000c0000000c0000000c0000000f0000000f0000000f000000140000001400000014000000
+  timeCooldown:
+  - 3
+  timeCooldownIndex: 0
+  timeDestroyBullet: 2

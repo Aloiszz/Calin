@@ -105,7 +105,7 @@ MonoBehaviour:
   shotgunBullet: {fileID: 3382658260587305931, guid: 360955dd59878a34a9b4cc44ce6563bb, type: 3}
   rushXP: {fileID: 4309990073933954382, guid: 4f524213c6f3ae146803ad04f85f34c2, type: 3}
   destruction: {fileID: 1374080534569733551, guid: 618896a0f8328c448858a691967aa258, type: 3}
-  rush_SO: {fileID: 11400000, guid: 8adda071990031146bf88863bc6b6a21, type: 2}
+  rush_SO: {fileID: 11400000, guid: 5ef9d758475ae4e41acbc562a2c0c3f8, type: 2}
   canShoot: 1
   life: 0
   velocity: 0
