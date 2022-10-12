@@ -19,6 +19,7 @@ public class Nuke : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        gameObject.transform.Rotate (0,50*Time.deltaTime, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D col)

@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 237821506, guid: 7a023967d5b43ae46a743856662a9119, type: 3}
-  m_Color: {r: 1, g: 0.5518868, b: 0.5518868, a: 1}
+  m_Sprite: {fileID: -1474469081, guid: 7f227488cd2ef7e4b8d27c433eb06de0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -107,7 +107,6 @@ MonoBehaviour:
   destruction: {fileID: 1374080534569733551, guid: 618896a0f8328c448858a691967aa258, type: 3}
   rush_SO: {fileID: 11400000, guid: b199c6ceff39ef24b8b21267514f29c2, type: 2}
   canShoot: 1
-  levelPlayer: 0
   life: 0
   velocity: 0
   numberBullet: 0
@@ -116,6 +115,8 @@ MonoBehaviour:
   timeCooldown: 0
   timeCooldownIndex: 0
   timeDestroyBullet: 0
+  isShooting: 1
+  isWalking: 0
 --- !u!61 &3916079150601195961
 BoxCollider2D:
   m_ObjectHideFlags: 0

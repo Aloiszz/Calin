@@ -10,6 +10,7 @@ public class VagueManager : MonoBehaviour
 {
     public GameObject target;
     public GameObject Rush;
+    public GameObject Rush2;
     public GameObject heart;
     public List<int> RushNumber;
     public int rushNumberIndex;
@@ -27,12 +28,22 @@ public class VagueManager : MonoBehaviour
     private GameObject newEnnemy;
     private GameObject newLife;
     public bool isSpawn = true;
+    public bool isSpawn2 = true;
     private float xBorder;
     private float yBorder;
+    private float xBorder2;
+    private float yBorder2;
 
     public bool isSpawnCoeur = false;
     private float xBorderHeart;
     private float yBorderHeart;
+
+    [Header("NUKE")]
+    public GameObject NUKE;
+    private GameObject newNUKE;
+    public bool isSpawnNUKE = false;
+    private float xBorderNUKE;
+    private float yBorderNUKE;
     
     public static VagueManager instance;
     
@@ -66,17 +77,22 @@ public class VagueManager : MonoBehaviour
                 newEnnemy.GetComponent<AIDestinationSetter>().target = target.transform;
                 newEnnemy.GetComponent<Rush>().SecureSO();
             }
-            
-            /*for (int j = 1; j < RushNumber2[rushNumberIndex2]+1; j++)
-            {
-                xBorder = Random.Range(-30f, 50f);
-                yBorder = Random.Range(-30f, 50f);
-                newEnnemy = Instantiate(Rush2, PlayerController.instance.transform.position + new Vector3(xBorder, yBorder, 0), Quaternion.identity);
-                newEnnemy.GetComponent<AIDestinationSetter>().target = target.transform;
-                newEnnemy.GetComponent<Rush>().SecureSO();
-            }*/
             isSpawn = false;
             rushNumberIndex++;
+        }
+
+        if (isSpawn2)
+        {
+            for (int j = 1; j < RushNumber2[rushNumberIndex2]+1; j++)
+            {
+                xBorder2 = Random.Range(-30f, 50f);
+                yBorder2 = Random.Range(-30f, 50f);
+                newEnnemy = Instantiate(Rush2, PlayerController.instance.transform.position + new Vector3(xBorder2, yBorder2, 0), Quaternion.identity);
+                newEnnemy.GetComponent<AIDestinationSetter>().target = target.transform;
+                newEnnemy.GetComponent<Rush>().SecureSO();
+            }
+            isSpawn2 = false;
+            rushNumberIndex2++;
         }
 
         if (isSpawnCoeur)
@@ -87,6 +103,18 @@ public class VagueManager : MonoBehaviour
                 yBorderHeart = Random.Range(-8f, 8f);
                 newLife = Instantiate(heart, PlayerController.instance.transform.position + new Vector3(xBorderHeart, yBorderHeart, 0), quaternion.identity);
                 newLife.gameObject.transform.DOScale(new Vector3(1.184821f, 2.023294f, 1), 1f);
+            }
+            isSpawnCoeur = false;
+        }
+        
+        if (isSpawnNUKE)
+        {
+            for (int p = 0; p < lifeDrop[lifeDropIndex]; p++)
+            {
+                xBorderNUKE = Random.Range(-8f, 8f);
+                yBorderNUKE = Random.Range(-8f, 8f);
+                newNUKE = Instantiate(NUKE, PlayerController.instance.transform.position + new Vector3(xBorderNUKE, yBorderNUKE, 0), quaternion.identity);
+                newNUKE.gameObject.transform.DOScale(new Vector3(0.3985f, 0.3985f, 0.3985f), 1f);
             }
             isSpawnCoeur = false;
         }
