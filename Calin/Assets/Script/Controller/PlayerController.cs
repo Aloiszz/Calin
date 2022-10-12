@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
 {
@@ -125,6 +126,19 @@ public class PlayerController : MonoBehaviour
             playerSO.isStriking = false;
             //CinemachineShake.instance.ShakeCamera(playerSO.intensityLightCloseDamage, playerSO.frequencyLightCloseDamage ,playerSO.timerLightCloseDamage);
         }
+    }
+
+
+    public void OnTouched()
+    {
+        StartCoroutine(touché());
+    }
+
+    IEnumerator touché()
+    {
+        GetComponent<SpriteRenderer>().DOFade(0, 0.05f);
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<SpriteRenderer>().DOFade(1, 0.05f);
     }
 
     /*IEnumerator LightCloseDamageCoolDown()

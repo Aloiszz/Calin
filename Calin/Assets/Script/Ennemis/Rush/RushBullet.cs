@@ -27,6 +27,8 @@ public class RushBullet : MonoBehaviour
             LifeManager.instance.current_life  -= 
                 GameObject.FindGameObjectWithTag("Rush").GetComponent<Rush>().damage;;
             
+            PlayerController.instance.OnTouched();
+            
         }
     }
 
