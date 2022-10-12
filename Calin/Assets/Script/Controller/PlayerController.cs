@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour
             //transform.Translate(Vector3.left * speed * Time.deltaTime);
             rb.AddForce(Vector2.left * playerSO.speedMovement);
             lastMovement.Add(Vector2.left);
+            GetComponent<SpriteRenderer>().flipX = true;
         }
 
         if (Input.GetKey(KeyCode.S))
@@ -84,6 +85,7 @@ public class PlayerController : MonoBehaviour
             //transform.Translate(Vector3.right * speed * Time.deltaTime);
             rb.AddForce(Vector2.right * playerSO.speedMovement);
             lastMovement.Add(Vector2.right);
+            GetComponent<SpriteRenderer>().flipX = false;
             
         }
     }
