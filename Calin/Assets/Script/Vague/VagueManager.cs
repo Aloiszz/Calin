@@ -67,14 +67,14 @@ public class VagueManager : MonoBehaviour
                 newEnnemy.GetComponent<Rush>().SecureSO();
             }
             
-            for (int i = 1; i < RushNumber2[rushNumberIndex2]+1; i++)
+            /*for (int j = 1; j < RushNumber2[rushNumberIndex2]+1; j++)
             {
                 xBorder = Random.Range(-30f, 50f);
                 yBorder = Random.Range(-30f, 50f);
-                newEnnemy = Instantiate(Rush, PlayerController.instance.transform.position + new Vector3(xBorder, yBorder, 0), Quaternion.identity);
+                newEnnemy = Instantiate(Rush2, PlayerController.instance.transform.position + new Vector3(xBorder, yBorder, 0), Quaternion.identity);
                 newEnnemy.GetComponent<AIDestinationSetter>().target = target.transform;
                 newEnnemy.GetComponent<Rush>().SecureSO();
-            }
+            }*/
             isSpawn = false;
             rushNumberIndex++;
         }
