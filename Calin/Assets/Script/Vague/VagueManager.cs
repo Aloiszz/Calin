@@ -9,34 +9,57 @@ using DG.Tweening;
 public class VagueManager : MonoBehaviour
 {
     public GameObject target;
-    public GameObject Rush;
-    public GameObject Rush2;
+    
     public GameObject heart;
+    
+    [Header("RUSH")]
+    public GameObject Rush;
     public List<int> RushNumber;
     public int rushNumberIndex;
-    public List<int> RushNumber2;
-    public int rushNumberIndex2;
-    
     public List<float> vagueTimer;
     public int vagueTimerIndex;
+    private GameObject newEnnemy;
+    private float xBorder;
+    private float yBorder;
+    public bool isSpawn = true;
     
+    [Header("RUSH Jaune ")]
+    public GameObject Rush2;
+    public List<int> RushNumber2;
+    public int rushNumberIndex2;
     public List<float> vagueTimer2;
     public int vagueTimerIndex2;
-
+    private float xBorder2;
+    private float yBorder2;
+    public bool isSpawn2 = true;
+    
+    [Header("RUSH VERT ")]
+    public GameObject Rush3;
+    public List<int> RushNumber3;
+    public int rushNumberIndex3;
+    public List<float> vagueTimer3;
+    public int vagueTimerIndex3;
+    private float xBorder3;
+    private float yBorder3;
+    public bool isSpawn3= true;
+    
+    [Header("RUSH NOIR ")]
+    public GameObject Rush4;
+    public List<int> RushNumber4;
+    public int rushNumberIndex4;
+    public List<float> vagueTimer4;
+    public int vagueTimerIndex4;
+    private float xBorder4;
+    private float yBorder4;
+    public bool isSpawn4= true;
+    
+    
+    [Header("Life")]
     public List<int> lifeDrop;
     public int lifeDropIndex;
     public List<float> lifeTimer;
     public int lifeTimerIndex;
-
-    private GameObject newEnnemy;
     private GameObject newLife;
-    public bool isSpawn = true;
-    public bool isSpawn2 = true;
-    private float xBorder;
-    private float yBorder;
-    private float xBorder2;
-    private float yBorder2;
-
     public bool isSpawnCoeur = false;
     private float xBorderHeart;
     private float yBorderHeart;
@@ -103,6 +126,34 @@ public class VagueManager : MonoBehaviour
             isSpawn2 = false;
             rushNumberIndex2++;
         }
+        
+        if (isSpawn3)
+        {
+            for (int p = 1; p < RushNumber2[rushNumberIndex2]+1; p++)
+            {
+                xBorder3= Random.Range(-30f, 50f);
+                yBorder3 = Random.Range(-30f, 50f);
+                newEnnemy = Instantiate(Rush3, PlayerController.instance.transform.position + new Vector3(xBorder3, yBorder3, 0), Quaternion.identity);
+                newEnnemy.GetComponent<AIDestinationSetter>().target = target.transform;
+                newEnnemy.GetComponent<Rush>().SecureSO();
+            }
+            isSpawn3 = false;
+            rushNumberIndex3++;
+        }
+        
+        if (isSpawn4)
+        {
+            for (int t = 1; t < RushNumber2[rushNumberIndex2]+1; t++)
+            {
+                xBorder4= Random.Range(-30f, 50f);
+                yBorder4 = Random.Range(-30f, 50f);
+                newEnnemy = Instantiate(Rush4, PlayerController.instance.transform.position + new Vector3(xBorder4, yBorder4, 0), Quaternion.identity);
+                newEnnemy.GetComponent<AIDestinationSetter>().target = target.transform;
+                newEnnemy.GetComponent<Rush>().SecureSO();
+            }
+            isSpawn4 = false;
+            rushNumberIndex4++;
+        }
 
         if (isSpawnCoeur)
         {
@@ -125,7 +176,7 @@ public class VagueManager : MonoBehaviour
                 newNUKE = Instantiate(NUKE, PlayerController.instance.transform.position + new Vector3(xBorderNUKE, yBorderNUKE, 0), quaternion.identity);
                 newNUKE.gameObject.transform.DOScale(new Vector3(0.3985f, 0.3985f, 0.3985f), 1f);
             }
-            isSpawnCoeur = false;
+            isSpawnNUKE = false;
         }
     }
 }

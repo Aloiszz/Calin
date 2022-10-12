@@ -47,6 +47,32 @@ public class Timer : MonoBehaviour
             
         }
         //END RUSH 2
+        // RUSH 3
+        if (VagueManager.instance.vagueTimer3[VagueManager.instance.vagueTimerIndex3] >= 0)
+        {
+            VagueManager.instance.vagueTimer3[VagueManager.instance.vagueTimerIndex3] -= Time.deltaTime;
+        }
+        else
+        {
+            VagueManager.instance.vagueTimerIndex3++; 
+            //VagueManager.instance.vagueTimer[VagueManager.instance.vagueTimerIndex] = tps;
+            VagueManager.instance.isSpawn3 = true;
+            
+        }
+        //END RUSH 3
+        // RUSH 4
+        if (VagueManager.instance.vagueTimer4[VagueManager.instance.vagueTimerIndex4] >= 0)
+        {
+            VagueManager.instance.vagueTimer4[VagueManager.instance.vagueTimerIndex4] -= Time.deltaTime;
+        }
+        else
+        {
+            VagueManager.instance.vagueTimerIndex4++; 
+            //VagueManager.instance.vagueTimer[VagueManager.instance.vagueTimerIndex] = tps;
+            VagueManager.instance.isSpawn4 = true;
+            
+        }
+        //END RUSH 4
         //LIFE
         if (VagueManager.instance.lifeTimer[VagueManager.instance.lifeTimerIndex] >= 0)
         {
