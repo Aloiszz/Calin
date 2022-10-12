@@ -10,6 +10,7 @@ public class XpRush : MonoBehaviour
     private SpriteRenderer SpriteRenderer;
     private float time = 0.5f;
     private bool isColor;
+    public int xp;
 
     private void Start()
     {
@@ -30,7 +31,7 @@ public class XpRush : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            XP_Manager.instance.current_XP  += GameObject.FindGameObjectWithTag("Rush").GetComponent<Rush>().xp;;
+            XP_Manager.instance.current_XP  += xp;; //GameObject.FindGameObjectWithTag("Rush").GetComponent<Rush>().
             gameObject.transform.DOScale(new Vector3(0, 0, 0), 0.3f);
             Destroy(gameObject, 0.3f);
         }
