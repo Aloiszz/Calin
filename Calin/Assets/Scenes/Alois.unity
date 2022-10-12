@@ -476,7 +476,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &302731996
 GameObject:
@@ -2259,6 +2259,10 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber4.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: lifeDrop.Array.data[2]
       value: 2
       objectReference: {fileID: 0}
@@ -2269,6 +2273,10 @@ PrefabInstance:
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: vagueTimer3.Array.size
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer4.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: NUKETimer.Array.data[0]
@@ -2507,6 +2515,30 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber4.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber4.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber4.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber4.Array.data[3]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber4.Array.data[4]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber4.Array.data[5]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: vagueTimer.Array.data[10]
       value: 30
       objectReference: {fileID: 0}
@@ -2601,6 +2633,14 @@ PrefabInstance:
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: vagueTimer3.Array.data[9]
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer4.Array.data[0]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer4.Array.data[1]
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: RushNumber3.Array.data[10]
@@ -2943,7 +2983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8997677031809742336, guid: fa5b44ae83bac5d4dad4eb9cf464e094, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8997677031809742336, guid: fa5b44ae83bac5d4dad4eb9cf464e094, type: 3}
       propertyPath: m_AnchorMax.x
