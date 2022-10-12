@@ -6,9 +6,9 @@ using TMPro;
 public class Chrono : MonoBehaviour
 {
     public float timer;
-    private float seconds;
-    private float minutes;
-    private float hours;
+    private int seconds;
+    private int minutes;
+    private int hours;
 
     public TextMeshProUGUI stopWatchText;
     
@@ -39,9 +39,9 @@ public class Chrono : MonoBehaviour
     void StopWatchCalcul()
     {
         timer += Time.deltaTime;
-        seconds = timer % 60;
-        minutes = timer / 60;
-        hours = timer / 3600;
+        int seconds =(int) timer % 60;
+        int minutes = (int)(timer / 60) % 60;
+        int hours = (int)(timer / 3600) % 24;
 
         stopWatchText.text = hours.ToString("00") + ":" + minutes.ToString("00") + ":" + seconds.ToString("00");
     }
