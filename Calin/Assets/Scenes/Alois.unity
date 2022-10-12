@@ -1405,6 +1405,22 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6340015027980761385, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9972707
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761385, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: m_Size.y
+      value: 2.684102
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761385, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.18475433
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761385, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.06808734
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340015027980761385, guid: 135ee4b3695b49a4d9dacfd875460241, type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -2135,6 +2151,110 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.size
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[20]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[21]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[22]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[23]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[24]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[25]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[26]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[27]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[28]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[29]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[30]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[31]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[32]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[33]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[34]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[35]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[36]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[37]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: lifeDrop.Array.data[38]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber.Array.data[6]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber.Array.data[7]
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber.Array.data[8]
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: RushNumber.Array.data[10]
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660539409466544776, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
+      propertyPath: vagueTimer.Array.data[10]
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6660539409466544777, guid: 6a5432d5b436a92468f609786c807baf, type: 3}
       propertyPath: m_RootOrder
       value: 4
