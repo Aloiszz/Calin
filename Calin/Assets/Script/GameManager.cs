@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
@@ -22,6 +23,9 @@ public class GameManager : MonoBehaviour
     public CanvasGroup mort;
     public Volume globalVolume;
 
+    public TextMeshProUGUI btn1;
+    public TextMeshProUGUI btn2;
+    public TextMeshProUGUI btn3;
 
     public TextMeshProUGUI txtIndicationDeath;
     
@@ -37,6 +41,18 @@ public class GameManager : MonoBehaviour
         { 
             instance = this; 
         }
+        /*BtnAmelioration1();
+        BtnAmelioration2();
+        BtnAmelioration3();*/
+    }
+
+    private void Start()
+    {
+        
+        Shotgun.instance.velocityIndex = 0;
+        Shotgun.instance.cadencyIndex = 0;
+        Shotgun.instance.axeShootIndex = 0;
+        Shotgun.instance.numberIndex = 0;
     }
 
     private void Update()
@@ -50,6 +66,9 @@ public class GameManager : MonoBehaviour
         {
             Amelioration();
         }
+        
+        
+        
     }
 
     void Pause()
@@ -103,6 +122,10 @@ public class GameManager : MonoBehaviour
         _base.DOFade(0, 0.5f);
         amelioration.DOFade(1, 0.5f);
         StartCoroutine(PauseTime());
+        
+        hazard();
+        hazard2();
+        hazard3();
     }
 
     public void UnAmelioration()
@@ -134,33 +157,151 @@ public class GameManager : MonoBehaviour
         txtIndicationDeath.text = "Bon t'as quand même survecu pendant " + Chrono.instance.timer + " secondes et tu as fait " 
                                   + XP_Manager.instance.current_XP + " XP";
     }
+    private int result;
+    private int result2;
+    private int result3;
+    void hazard()
+    {
+        result = Random.Range(0, 3);
+        Debug.Log(result);
+
+        switch (result)
+        {
+            case 0 :
+                btn1.text = axeDeTireTXT;
+                break;
+            case 1 :
+                btn1.text = addVelocityTXT;;
+                break;
+            case 2 :
+                btn1.text = addNbrBalleTXT;
+                break;
+            case 3 :
+                btn1.text = addCadencyTXT;
+                break;
+        }
+    }
+    void hazard2()
+    {
+        result2 = Random.Range(0, 3);
+        Debug.Log(result);
+
+        switch (result2)
+        {
+            case 0 :
+                btn2.text = axeDeTireTXT;
+                break;
+            case 1 :
+                btn2.text = addVelocityTXT;
+                break;
+            case 2 :
+                btn2.text = addNbrBalleTXT;
+                break;
+            case 3 :
+                btn2.text = addCadencyTXT;
+                break;
+        }
+    }
+    void hazard3()
+    {
+        result3 = Random.Range(0, 3);
+        Debug.Log(result);
+
+        switch (result3)
+        {
+            case 0 :
+                btn3.text = axeDeTireTXT;
+                break;
+            case 1 :
+                btn3.text = addVelocityTXT;;
+                break;
+            case 2 :
+                btn3.text = addNbrBalleTXT;
+                break;
+            case 3 :
+                btn3.text = addCadencyTXT;
+                break;
+        }
+    }
 
     public void BtnAmelioration1()
     {
         //AddWeapon();
-        AxeDeTire();
+        //hazard();
+        switch (result)
+        {
+            case 0 :
+                AxeDeTire();
+                break;
+            case 1 :
+                AddVelocity();
+                break;
+            case 2 :
+                AddNumber();
+                break;
+            case 3 :
+                AddCadency();
+                break;
+        }
     }
     
     public void BtnAmelioration2()
     {
-        AddVelocity();
+        //AddVelocity();
+        //hazard2();
+        switch (result2)
+        {
+            case 0 :
+                AxeDeTire();
+                break;
+            case 1 :
+                AddVelocity();
+                break;
+            case 2 :
+                AddNumber();
+                break;
+            case 3 :
+                AddCadency();
+                break;
+        }
     }
     
     public void BtnAmelioration3()
     {
-        AddNumber();
+        //AddNumber();
+        //hazard3();
+        switch (result3)
+        {
+            case 0 :
+                AxeDeTire();
+                break;
+            case 1 :
+                AddVelocity();
+                break;
+            case 2 :
+                AddNumber();
+                break;
+            case 3 :
+                AddCadency();
+                break;
+        }
     }
     
     /*-------------------------Amelioration-----------------------------------------*/
+    private string axeDeTireTXT = "Ajouts d'un axe de tire";
+    private string addVelocityTXT = "Augmente la vélocité des munitions tirées";
+    private string addNbrBalleTXT = "Augmente le nombre de balles tirées";
+    private string addCadencyTXT = "Augmente la cadence de tire";
+    
     public void AxeDeTire()
     {
+        
         UnAmelioration();
         if (Shotgun.instance.axeShootIndex < Shotgun.instance.shotgun_SO.axeShoot.Count)
         {
             Shotgun.instance.axeShootIndex++;
             Shotgun.instance.SecureSO();
         }
-        
     }
     
     public void AddVelocity()
@@ -181,7 +322,6 @@ public class GameManager : MonoBehaviour
             Shotgun.instance.cadencyIndex++;
             Shotgun.instance.SecureSO();
         }
-        
     }
     
     public void AddNumber()
@@ -192,7 +332,6 @@ public class GameManager : MonoBehaviour
             Shotgun.instance.numberIndex++;
             Shotgun.instance.SecureSO();
         }
-        
     }
 
     public void AddWeapon()
